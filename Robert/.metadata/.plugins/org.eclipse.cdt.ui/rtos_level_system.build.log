@@ -1,0 +1,6 @@
+20:33:57 **** Incremental Build of configuration Debug for project rtos_level_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+20:33:57 Build Finished (took 175ms)
+

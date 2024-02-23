@@ -4467,3 +4467,3105 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 18:55:55.476
 !MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:26:51.710
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:26:51.716
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:26:51.716
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:26:51.737
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.12",
+}]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:26:51.737
+!MESSAGE Generating MD5 hash for file: D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\proj_2_rtos\export\proj_2_rtos\sw\proj_2_rtos\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:26:51.739
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:26:51.739
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-22 20:26:52.062
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:29:50.697
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:29:50.700
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:29:50.701
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:29:50.703
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.12",
+}]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:29:50.703
+!MESSAGE Generating MD5 hash for file: D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\proj_2_rtos\export\proj_2_rtos\sw\proj_2_rtos\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:29:50.703
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:29:50.704
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-22 20:29:51.263
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:23.843
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:23.847
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:23.847
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:23.848
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.12",
+}]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:30:23.848
+!MESSAGE Generating MD5 hash for file: D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\proj_2_rtos\export\proj_2_rtos\sw\proj_2_rtos\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:23.848
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:23.851
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-22 20:30:24.713
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:43.915
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:43.917
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:43.918
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:43.941
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.12",
+}]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:30:43.941
+!MESSAGE Generating MD5 hash for file: D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\proj_2_rtos\export\proj_2_rtos\sw\proj_2_rtos\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:43.942
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:30:43.944
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-22 20:30:44.753
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:31:30.757
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:31:30.761
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:31:30.761
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:31:30.764
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.12",
+}]. Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:31:30.764
+!MESSAGE Generating MD5 hash for file: D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\proj_2_rtos\export\proj_2_rtos\sw\proj_2_rtos\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:31:30.764
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:31:30.765
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:31:31.834
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-22 20:33:04.857
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-22 20:33:04.858
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-22 20:33:04.858
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:33:56.534
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:33:56.538
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:33:56.538
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:33:56.545
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.12",
+}]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:33:56.545
+!MESSAGE Generating MD5 hash for file: D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\proj_2_rtos\export\proj_2_rtos\sw\proj_2_rtos\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:33:56.546
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:33:56.549
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:33:57.195
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:12.490
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:12.492
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa ], Result: [null, {"microblaze_0": "embsys_i/microblaze_0:embsys_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:16.127
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:16.129
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:16.129
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:16.131
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:31.889
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY org.eclipse.tcf 4 0 2024-02-22 20:34:34.151
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:34.197
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:34.199
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.297
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887222440502A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.299
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.303
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887222440502A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.303
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.315
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.328
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.329
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.329
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.333
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887222440502A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.333
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.333
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.334
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.337
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887222440502A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.339
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.350
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.350
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.351
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn1-0362f093-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.461
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.919
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:35.919
+!MESSAGE XSCT Command: [fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:37.626
+!MESSAGE XSCT command with result: [fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:38.435
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:34:38.437
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:12.641
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_DEBUG_ENABLED], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:12.643
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:12.643
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_DEBUG_PROFILE_SIZE], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:12.644
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_DEBUG_PROFILE_SIZE], Result: [null, 0]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:12.644
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_FREQ], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:12.645
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_FREQ], Result: [null, 100000000]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:12.968
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:12.971
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa], Result: [null, {}]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:12.971
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.007
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0], Result: [null, {"axi_iic_0": {"GIE": {"description": "Global Interrupt Enable Register",
+"address_offset": "0x1c",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"GIE": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Global Interrupt Enable
+0 - All Interrupts disabled; no interrupt (even if unmasked in IER) possible from AXI IIC core
+1 - Unmasked AXI IIC core interrupts are passed to processor
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130460,
+},
+"ISR": {"description": "Interrupt Status Register",
+"address_offset": "0x020",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"int0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt0 - Arbitration Lost
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt1 - Transmit Error/Slave Transmit Complete
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int2": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt2 - Transmit FIFO Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int3": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt3 - Recieve FIFO FULL
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int4": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt4 - IIC Bus is Not Busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int5": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt5 - Addressed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int6": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt6 - Not Addessed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int7": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt7 - Transmit FIFO Half Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130464,
+},
+"IER": {"description": "Interrupt Enable Register",
+"address_offset": "0x028",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"int0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt0 - Arbitration Lost
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt1 - Transmit Error/Slave Transmit Complete
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int2": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt2 - Transmit FIFO Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int3": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt3 - Recieve FIFO FULL
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int4": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt4 - IIC Bus is Not Busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int5": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt5 - Addressed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int6": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt6 - Not Addessed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int7": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt7 - Transmit FIFO Half Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130472,
+},
+"SOFTR": {"description": "Soft Reset Register",
+"address_offset": "0x040",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RKEY": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Reset Key - Firmware must write a value of 0xA to this field to
+            cause a soft reset of the Interrupt registers of AXI IIC controller.
+            Writing any other value results in an AXI transaction
+            acknowledgement with SLVERR and no reset occurs.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130496,
+},
+"CR": {"description": "Control Register",
+"address_offset": "0x100",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"EN": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit must be set before any other CR bits have any effect
+0 - resets and disables the AXI IIC controller but not the registers or FIFOs
+1 - enables the AXI IIC controller
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Reset": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit must be set to flush the FIFO if either (a) arbitration is lost or (b) if a transmit error occurs
+0 - transmit FIFO normal operation
+1 - resets the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"MSMS": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When this bit is changed from 0 to 1, the
+AXI IIC bus interface generates a START condition in master mode. When
+this bit is cleared, a STOP condition is generated and the AXI IIC bus
+interface switches to slave mode. When this bit is cleared by the
+hardware, because arbitration for the bus has been lost, a STOP
+condition is not generated
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit selects the direction of master/slave transfers.
+0 - selects an AXI IIC receive
+1 - selects an AXI IIC transmit
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TXAK": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit specifies the value driven onto
+the sda line during acknowledge cycles for both master and slave recievers.
+0 - acknowledge
+1 - not-acknowledge
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RSTA": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Writing a 1 to this bit generates a repeated START 
+condition on the bus if the AXI IIC bus interface is the current bus
+master. Attempting a repeated START at the wrong time, if the bus is
+owned by another master, results in a loss of arbitration. This bit is reset
+when the repeated start occurs. This bit must be set prior to writing the
+new address to the TX_FIFO or DTR
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GC_EN": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Setting this bit High allows the AXI IIC to respond to a general call address.
+0 - General Call Disabled
+1 - General Call Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130688,
+},
+"SR": {"description": "Status Register",
+"address_offset": "0x104",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"ABGC": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set to 1 when another master has issued a general call and
+the general call enable bit is set to 1, CR(6) = 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"AAS": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When the address on the IIC bus matches the slave address in the Address register (ADR), the IIC bus interface
+is being addressed as a slave and switches to slave mode. If 10-bit addressing is selected this device only responds to a 10-bit
+address or general call if enabled. This bit is cleared when a stop
+condition is detected or a repeated start occurs.
+0 - indicates not being addressed as a slave
+1 - indicates being addressed as a slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"BB": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit indicates the status of the IIC bus. This bit is set
+when a START condition is detected and cleared when a STOP
+condition is detected.
+0 - indicates the bus is idle
+1 - indicates the bus is busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARW": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When the IIC bus interface has been addressed as a slave (AAS is set), 
+this bit indicates the value of the read/write bit sent by the master.
+This bit is only valid when a complete transfer has occurred and
+no other transfers have been initiated.
+0 - indicates master writing to slave
+1 - indicates master reading from slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set High when the transmit FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set High when the receive FIFO is full.
+This bit is set only when all 16 locations in the FIFO are full,
+regardless of the compare value field of the RX_FIFO_PIRQ register.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This is set High when the receive FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This is set High when the transmit FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130692,
+},
+"TX_FIFO": {"description": "Transmit FIFO Register",
+"address_offset": "0x108",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"D7_D0": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "If the dynamic stop bit is used and the AXI IIC is a master receiver,
+the value is the number of bytes to receive.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Start": {"access": "write-only",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The dynamic start bit can be used to send a start or repeated start sequence on the
+IIC bus. A start sequence is generated if the MSMS = 0, a
+repeated start sequence is generated if the MSMS = 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Stop": {"access": "write-only",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The dynamic stop bit can be used to send an IIC stop
+sequence on the IIC bus after the last byte has been transmitted or received.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130696,
+},
+"RX_FIFO": {"description": "Recieve FIFO Register",
+"address_offset": "0x10C",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"D7_D0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "IIC Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130700,
+},
+"ADR": {"description": "Slave Address Register",
+"address_offset": "0x110",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Slave_Address": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "7",
+"desc": "Address used by the IIC bus interface when in slave mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130704,
+},
+"TX_FIFO_OCY": {"description": "Transmit FIFO Occupency Register",
+"address_offset": "0x114",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Occupancy_Value": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 indicates that
+10 locations are full in the FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130708,
+},
+"RX_FIFO_OCY": {"description": "Recieve FIFO Occupency Register",
+"address_offset": "0x118",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Occupancy_Value": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 indicates that
+10 locations are full in the FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130712,
+},
+"TEN_ADR": {"description": "Slave Ten Bit Address Register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MSB_of_Slave_Address": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "3",
+"desc": "Three MSBs of the 10-bit address used by the AXI IIC bus interface when in slave mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130716,
+},
+"RX_FIFO_PIRQ": {"description": "Recieve FIFO Programmable Depth Interrupt Register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Compare_Value": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 implies that when
+10 locations in the receive FIFO are filled, the receive FIFO
+interrupt is set.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130720,
+},
+"GPO": {"description": "General Purpose Output Register",
+"address_offset": "0x124",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"General_Purpose_Outputs": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The LSB (Bit[0]) is the first bit populated
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130724,
+},
+"TSUSTA": {"description": "Timing Parameter TSUSTA Register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TSUSTA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Setup time for a repeated START condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130728,
+},
+"TSUSTO": {"description": "Timing Parameter TSUSTO Register",
+"address_offset": "0x12C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TSUSTO": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Setup time for a repeated STOP condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130732,
+},
+"THDSTA": {"description": "Timing Parameter THDSTA Register",
+"address_offset": "0x130",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"THDSTA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Hold time for a repeated START condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130736,
+},
+"TSUDAT": {"description": "Timing Parameter TSUDAT Register",
+"address_offset": "0x134",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TSUDAT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Data Setup time
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130740,
+},
+"TBUF": {"description": "Timing Parameter TBUF Register",
+"address_offset": "0x138",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TBUF": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Bus free time between a STOP and START condition
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130744,
+},
+"THIGH": {"description": "Timing Parameter THIGH Register",
+"address_offset": "0x13C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"THIGH": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "High Period of the scl clock.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130748,
+},
+"TLOW": {"description": "Timing Parameter TLOW Register",
+"address_offset": "0x140",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TLOW": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Low Period of scl clock.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130752,
+},
+"THDDAT": {"description": "Timing Parameter THDDAT Register",
+"address_offset": "0x144",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"THDDAT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Data Hold time
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1082130756,
+},
+},
+"axi_timer_0": {"TCSR0": {"description": "Timer 0 Control and Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Mode
+0 - Timer mode is generate
+1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT0": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 0
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT0": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 0
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT0": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 0
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT0": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 0.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.      0 = Hold counter or capture value. The TLR must be read before providing the external capture.      1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD0": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 0      0 = No load      1 = Loads timer with value in TLR0 Setting this bit loads timer/counter register (TCR0) with a specified value in the timer/counter load register (TLR0).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT0) bit in TCSR0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT0": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 0
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T0INT) in TCSR0.      0 - Disable interrupt signal   1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT0": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 0
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T0INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT   1 - Clear T0INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA0": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 0      0 - Disable pulse width modulation      1 - Enable pulse width modulation PWM requires using Timer 0 and Timer 1 together as a pair.  Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0 and C_GEN0_ASSERT and C_GEN1_ASSERT must be 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run) This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. 
+Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CASC": {"access": "read-write",
+"bit_offset": "11",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable cascade mode of timers      0 - Disable cascaded operation      1 - Enable cascaded operation Cascaded operation requires using Timer 0 and Timer 1 together as a pair.  The counting event for the Timer 1 is when the Timer 0 rolls over from all 1s to all 0s or vice-versa when counting down.
+TLR0 and TLR1 are used for lower 32-bit and higher 32-bit respectively. Similarly, TCR0 contains lower 32-bits for the 64-bit counter and TCR1 contains the higher 32-bits.
+Only TCSR0 is valid for both the timer/counters in this mode.
+This CASC bit must be set before enabling the timer/counter.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101952,
+},
+"TLR0": {"description": "Timer 0 Load Register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101956,
+},
+"TCR0": {"description": "Timer 0 Counter Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101960,
+},
+"TCSR1": {"description": "Timer 1 Control and Status Register",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Mode
+  0 - Timer mode is generate
+  1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 1
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT1": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 1
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT1": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 1
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT1": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 1.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.
+0 = Hold counter or capture value. The TLR must be read before providing the external capture.   
+1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD1": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 1      0 = No load      1 = Loads timer with value in TLR1 Setting this bit loads timer/counter register (TCR1) with a specified value in the timer/counter load register (TLR1).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT1) bit in TCSR1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT1": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 1
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T1INT) in TCSR1.      0 - Disable interrupt signal      1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT1": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 1
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T1INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT      1 - Clear T1INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA1": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 1      0 - Disable pulse width modulation      1 - Enable pulse width modulation  PWM requires using Timer 0 and Timer 1 together as a pair. Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run)  This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101968,
+},
+"TLR1": {"description": "Timer 1 Load Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101972,
+},
+"TCR1": {"description": "Timer 1 Counter Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR1": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101976,
+},
+},
+"axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_DATA": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033280,
+},
+"TX_FIFO": {"description": "Transmit data FIFO",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TX_DATA": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033284,
+},
+"CTRL_REG": {"description": "UART Lite control register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RST_TXFIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RST_RXFIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Enable_Intr": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033292,
+},
+"STAT_REG": {"description": "UART Lite status register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Intr_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Overrun_Error": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Frame_Error": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Parity_Error": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033288,
+},
+},
+"mdm_1": {"UART_Receive": {"description": "JTAG UART Receive Data",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"UART_RX": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 1094713344,
+},
+"UART_Transmit": {"description": "JTAG UART Transmit Data",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"UART_TX": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713348,
+},
+"UART_Status": {"description": "JTAG UART Status Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has valid data:
+  0 - Receive FIFO is empty.
+  1 - Receive FIFO has valid data.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full:
+  0 - Receive FIFO is not full.
+  1 - Receive FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty:
+  0 - Transmit FIFO is not empty.
+  1 - Transmit FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full:
+  0 - Transmit FIFO is not full.
+  1 - Transmit FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Interrupt_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupt is enabled:
+  0 - Interrupt is disabled.
+  1 - Interrupt is enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713352,
+},
+"UART_Control": {"description": "JTAG UART Control Register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"Reset_TX_FIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO:
+  0 - Do nothing.
+  1 - Clear the transmit FIFO.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Reset_RX_FIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO:
+  0 - Do nothing.
+  1 - Clear the receive FIFO.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Clear_EXT_BRK": {"access": "write-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Clear the EXT_BRK signal set by JTAG:
+  0 - Do nothing.
+  1 - Clear the signal.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Interrupt_Enabled": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates interrupt for the MDM JTAG UART:
+  0 - Disable interrupt interrupt.
+  1 - Enable interrupt signal.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713356,
+},
+"Debug_Status": {"description": "Debug Register Access Status Register",
+"address_offset": "0x10",
+"access": "read-only",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"LOCK": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates the access lock status:
+  0 - The lock is not acquired.
+  1 - The lock has been acquired by the JTAG interface.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713360,
+},
+"Debug_Control": {"description": "Debug Register Access Control Register",
+"address_offset": "0x10",
+"access": "write-only",
+"size": "20",
+"interface": "S_AXI",
+"fields": {"Bit_Size": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "9",
+"desc": "Number of bits in the accessed debug register - 1",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"MDM_Command": {"access": "write-only",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "8",
+"desc": "MDM command.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Access_MDM": {"access": "write-only",
+"bit_offset": "17",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Access MDM or MicroBlaze Debug register:
+  0 - MicroBlaze debug register access.
+  1 - MDM debug register access.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Access_Lock_Type": {"access": "read-only",
+"bit_offset": "18",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Access lock type write:
+  0 - Release access lock to abort atomic sequence.
+  1 - Lock before first access and unlock after last.
+  2 - Lock before first access, otherwise keep lock.
+  3 - Force lock acquisition, even if aquired by JTAG.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713360,
+},
+"Debug_Data": {"description": "Debug Register Access Data Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"DBG_Data": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Read or write debug register data indicated by DBG_CTRL.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 1094713364,
+},
+"Debug_Lock": {"description": "Debug Register Access Locking Register",
+"address_offset": "0x18",
+"access": "write-only",
+"size": "16",
+"interface": "S_AXI",
+"fields": {"DBG_LOCK": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "16",
+"desc": "Unlock access to registers DBG_CTLR and DBG_DATA when writing 0xEBAB.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713368,
+},
+},
+"microblaze_0_axi_intc": {"ISR": {"description": "Interrupt Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Interrupt Status Register.
+For each bit up to number of periperhal interrupts:
+  R - Reads active interrupt signal.
+  W - No effect after MER HIE bit has been set, otherwise writes active interrupt signal.
+For remaining bits defined by number of software interrupts:
+  R - Reads software interrupt value.
+  W - Writes software interrupt value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"IPR": {"description": "Interrupt Pending Register",
+"address_offset": "0x4",
+"access": "read-only",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Interrupt Pending Register.
+For each bit:
+  R - Reads logical AND of bits in ISR and IER.
+  W - No effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"IER": {"description": "Interrupt Enable Register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Interrupt Enable Register.
+For each bit:
+  R - Reads interrupt enable value.
+  W - Writes interrupt enable value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"IAR": {"description": "Interrupt Acknowledge Register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Interrupt Acknowledge Register.
+For each bit:
+  W - Acknowledge interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"SIE": {"description": "Set Interrupt Enables",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Set Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 enables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616208,
+},
+"CIE": {"description": "Clear Interrupt Enables",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Clear Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 disables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616212,
+},
+"IVR": {"description": "Interrupt Vector Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"IVN": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Vector Number.
+  R - Reads ordinal of highest priority, enabled, active interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616216,
+},
+"MER": {"description": "Master Enable Register",
+"address_offset": "0x1C",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"ME": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master IRQ Enable.
+  0 - All interrupts disabled.
+  1 - All interrupts can be enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"HIE": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Hardware Interrupt Enable.
+  0 - HW interrupts disabled.
+  1 - HW interrupts enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616220,
+},
+"IMR": {"description": "Interrupt Mode Register",
+"address_offset": "0x20",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Interrupt Mode Register.
+For each bit:
+  R - Reads interrupt mode.
+  W - Sets interrupt mode, where 0 is normal mode and 1 is fast mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616224,
+},
+"IVAR[0]": {"description": "Interrupt Vector Address Register 0",
+"address_offset": "0x100",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 0 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616448,
+},
+"IVAR[1]": {"description": "Interrupt Vector Address Register 1",
+"address_offset": "0x104",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 1 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616452,
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+"nexys4io_0": {},
+}]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.010
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.037
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0], Result: [null, {"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40600000",
+"high": "0x4060FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_iic_0_S_AXI": {"name": "axi_iic_0",
+"base": "0x40800000",
+"high": "0x4080FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_axi_intc_s_axi": {"name": "microblaze_0_axi_intc",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "s_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"mdm_1_S_AXI": {"name": "mdm_1",
+"base": "0x41400000",
+"high": "0x41400FFF",
+"size": "4096",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_timer_0_S_AXI": {"name": "axi_timer_0",
+"base": "0x41C00000",
+"high": "0x41C0FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"nexys4io_0_S00_AXI": {"name": "nexys4io_0",
+"base": "0x44A00000",
+"high": "0x44A0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x0001FFFF",
+"size": "131072",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.037
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.039
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+}]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.041
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa mdm_1], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.043
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa mdm_1], Result: [null, {}]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.043
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa mdm_1], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.044
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.045
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa mdm_1], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.045
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa mdm_1], Result: [null, microblaze_0]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.046
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.047
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.047
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.072
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.073
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.074
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.074
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.081
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887222440502A]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.081
+!MESSAGE XSCT Command: [version -server], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.084
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.084
+!MESSAGE XSCT Command: [version], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.084
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.086
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.089
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887222440502A]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.090
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.103
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.103
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.108
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887222440502A]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.109
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.122
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.123
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.127
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887222440502A]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.127
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.141
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.141
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.145
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887222440502A]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.145
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.158
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.160
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.165
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887222440502A]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.165
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.178
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.178
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887222440502A" && level == 0}], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.191
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887222440502A" && level == 0}], Result: [null, ]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.192
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.194
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.194
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.200
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa microblaze_0], Result: [null, {"Clk": "100000000",
+"Dbg_Clk": "",
+}]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.260
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.264
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.265
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.277
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.278
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.298
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:13.298
+!MESSAGE XSCT Command: [fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.564
+!MESSAGE XSCT command with result: [fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.590
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.603
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.604
+!MESSAGE XSCT Command: [loadhw -hw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa -regs], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.651
+!MESSAGE XSCT command with result: [loadhw -hw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa -regs], Result: [null, booleanfpga_3]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.651
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.652
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.653
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.666
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.667
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.668
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:14.669
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:17.670
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:17.671
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:17.684
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:17.684
+!MESSAGE XSCT Command: [dow D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:17.813
+!MESSAGE XSCT command with result: [dow D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf], Result: [null, ]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:17.921
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:17.945
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:17.946
+!MESSAGE XSCT Command: [con], Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:17.958
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-30: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:35:17.961
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:35:17.961
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:43.601
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-325
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:43.619
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-325
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.000
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.004
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.004
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.012
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.012
+!MESSAGE XSCT Command: [version -server], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.013
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.013
+!MESSAGE XSCT Command: [version], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.013
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.014
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.019
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.019
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.033
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.033
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.046
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.048
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.059
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.060
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.064
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.064
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.079
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.079
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.083
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.084
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.101
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.101
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.109
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.109
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.123
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.124
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887222440502A" && level == 0}], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.135
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887222440502A" && level == 0}], Result: [null, ]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.136
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.137
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.245
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.252
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.253
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.272
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.273
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.310
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:44.310
+!MESSAGE XSCT Command: [fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.582
+!MESSAGE XSCT command with result: [fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.644
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.657
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.657
+!MESSAGE XSCT Command: [loadhw -hw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa -regs], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.663
+!MESSAGE XSCT command with result: [loadhw -hw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa -regs], Result: [null, booleanfpga_3]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.664
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.665
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.665
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.679
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.680
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.682
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:45.682
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:48.700
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:48.701
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:48.712
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:48.712
+!MESSAGE XSCT Command: [dow D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:48.833
+!MESSAGE XSCT command with result: [dow D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf], Result: [null, ]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:48.899
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:48.912
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:48.912
+!MESSAGE XSCT Command: [con], Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:48.921
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-15: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:35:48.922
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:35:48.922
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.185
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-367
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.186
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-367
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.378
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.382
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.382
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.390
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.390
+!MESSAGE XSCT Command: [version -server], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.391
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.391
+!MESSAGE XSCT Command: [version], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.392
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.392
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.396
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.396
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.411
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.411
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.416
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.416
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.429
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.430
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.434
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.434
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.451
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.452
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.456
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.456
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.470
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.471
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.476
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.476
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.489
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.489
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887222440502A" && level == 0}], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.503
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887222440502A" && level == 0}], Result: [null, ]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.504
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.506
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.545
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.550
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.550
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.565
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.566
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.591
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:49.591
+!MESSAGE XSCT Command: [fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.875
+!MESSAGE XSCT command with result: [fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.930
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.944
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.944
+!MESSAGE XSCT Command: [loadhw -hw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa -regs], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.951
+!MESSAGE XSCT command with result: [loadhw -hw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa -regs], Result: [null, booleanfpga_3]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.951
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.952
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.952
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.965
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.965
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.967
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:50.967
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:53.980
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:53.980
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:53.993
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:53.993
+!MESSAGE XSCT Command: [dow D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:54.115
+!MESSAGE XSCT command with result: [dow D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf], Result: [null, ]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:54.211
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:54.224
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:54.225
+!MESSAGE XSCT Command: [con], Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 20:35:54.240
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-26: Launching SystemDebugger_rtos_level_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:35:54.241
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-22 20:35:54.241
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:18.568
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:18.570
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.557
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.558
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.559
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.565
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.565
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.571
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887222440502A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.571
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.586
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.588
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.626
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:40.626
+!MESSAGE XSCT Command: [fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:41.907
+!MESSAGE XSCT command with result: [fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:42.718
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:13:42.721
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:24:01.688
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-416
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-22 21:24:01.713
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [{Format=channel "tcfchan#4" closed, Time=1708665841713, Code=1}, ]. Thread: Thread-416

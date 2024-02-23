@@ -19,3 +19,125 @@
 18:11:41 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
 18:13:22 INFO  : No changes in MSS file content so sources will not be generated.
 18:55:55 INFO  : No changes in MSS file content so sources will not be generated.
+20:26:51 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
+20:29:50 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
+20:30:23 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
+20:30:43 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
+20:31:30 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
+20:33:56 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
+20:34:31 INFO  : Bit file 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit' is generated.
+20:34:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:34:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:34:37 INFO  : Device configured successfully with "D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit"
+20:35:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:35:13 INFO  : Jtag cable 'RealDigital Boo 887222440502A' is selected.
+20:35:13 INFO  : 'jtag frequency' command is executed.
+20:35:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:35:14 INFO  : Device configured successfully with "D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit"
+20:35:14 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:14 INFO  : Hardware design and registers information is loaded from 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa'.
+20:35:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:35:14 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:14 INFO  : System reset is completed.
+20:35:17 INFO  : 'after 3000' command is executed.
+20:35:17 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:17 INFO  : The application 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf' is downloaded to processor 'microblaze_0'.
+20:35:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf
+----------------End of Script----------------
+
+20:35:17 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:17 INFO  : 'con' command is executed.
+20:35:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:35:17 INFO  : Launch script is exported to file 'D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\rtos_level_system\_ide\scripts\systemdebugger_rtos_level_system_standalone.tcl'
+20:35:43 INFO  : Disconnected from the channel tcfchan#2.
+20:35:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:35:44 INFO  : Jtag cable 'RealDigital Boo 887222440502A' is selected.
+20:35:44 INFO  : 'jtag frequency' command is executed.
+20:35:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:35:45 INFO  : Device configured successfully with "D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit"
+20:35:45 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:45 INFO  : Hardware design and registers information is loaded from 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa'.
+20:35:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:35:45 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:45 INFO  : System reset is completed.
+20:35:48 INFO  : 'after 3000' command is executed.
+20:35:48 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:48 INFO  : The application 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf' is downloaded to processor 'microblaze_0'.
+20:35:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf
+----------------End of Script----------------
+
+20:35:48 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:48 INFO  : 'con' command is executed.
+20:35:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:35:48 INFO  : Launch script is exported to file 'D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\rtos_level_system\_ide\scripts\systemdebugger_rtos_level_system_standalone.tcl'
+20:35:49 INFO  : Disconnected from the channel tcfchan#3.
+20:35:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:35:49 INFO  : Jtag cable 'RealDigital Boo 887222440502A' is selected.
+20:35:49 INFO  : 'jtag frequency' command is executed.
+20:35:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:35:50 INFO  : Device configured successfully with "D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit"
+20:35:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:50 INFO  : Hardware design and registers information is loaded from 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa'.
+20:35:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:35:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:50 INFO  : System reset is completed.
+20:35:53 INFO  : 'after 3000' command is executed.
+20:35:53 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:54 INFO  : The application 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf' is downloaded to processor 'microblaze_0'.
+20:35:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/hw/booleanfpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/Debug/rtos_level.elf
+----------------End of Script----------------
+
+20:35:54 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:54 INFO  : 'con' command is executed.
+20:35:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:35:54 INFO  : Launch script is exported to file 'D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\rtos_level_system\_ide\scripts\systemdebugger_rtos_level_system_standalone.tcl'
+21:13:40 INFO  : Bit file 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit' is generated.
+21:13:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:13:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887222440502A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:13:41 INFO  : Device configured successfully with "D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtos_level/_ide/bitstream/download.bit"
+21:24:01 WARN  : channel "tcfchan#4" closed

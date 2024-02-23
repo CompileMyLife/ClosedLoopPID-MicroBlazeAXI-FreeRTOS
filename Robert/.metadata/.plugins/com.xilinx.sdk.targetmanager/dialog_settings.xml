@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="rtos_level_system-bitFile" value="${project_loc:rtos_level}/_ide/bitstream/booleanfpga.bit"/>
+	<item key="rtos_level_system-bmmFile" value="${project_loc:rtos_level}/_ide/bitstream/booleanfpga.mmi"/>
+	<item key="rtos_level_system-target" value="Local"/>
+	<item key="rtos_level_system-device" value="Auto Detect"/>
+	<item key="rtos_level_system-partial_bit" value="false"/>
+	<item key="rtos_level_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="rtos_level_system"/>
+	<item key="rtos_level_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;RealDigital Boo 887222440502A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn1-0362f093-0&quot;}}]}"/>
+</section>
