@@ -107,33 +107,35 @@ int mpu6050_getGyroData(XIic *i2cInstance, u8 *data, int axis) {
  */
 int mpu6050_gyroCfg(XIic *i2cInstance, u8 range) {
     // Write the configuration to the GYRO_CONFIG register.
+    // Use FS_SEL bits
     return writeRegister(i2cInstance, GYRO_CONFIG, range << 3);
 }
 
 /**
- * Sets the sleep mode of the MPU-6050.
+ * Sets or clears the sleep mode of the MPU-6050.
  * 
  * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
  * @param mode 1 to enable sleep mode, 0 to disable it.
  * @return XST_SUCCESS if the operation was successful, otherwise an error code.
  */
-int mpu6050_setSleepMode(XIic *i2cInstance) {
+int mpu6050_setSleepMode(XIic *i2cInstance, u8 mode) {
     u8 current;
     int Status;
 
-    // First, read the current value of the PWR_MGMT_1 register.
+    // First, read the current state of the PWR_MGMT_1 register.
     Status = readRegister(i2cInstance, PWR_MGMT_1, &current, 1);
     if (Status != XST_SUCCESS) {
-        return Status;
+        return Status; // Return error code if read failed.
     }
 
-    // Set the sleep bit (bit 6)
     if (mode) {
-        current |= (1 << 6); // Enable sleep mode.
+        current |= (1 << 6); // Set the sleep bit to enable sleep mode.
+    } else {
+        current &= ~(1 << 6); // Clear the sleep bit to disable sleep mode.
+    }
 
     // Write the modified value back to the PWR_MGMT_1 register.
     return writeRegister(i2cInstance, PWR_MGMT_1, current);
-    }
 }
 
 /**
@@ -142,21 +144,6 @@ int mpu6050_setSleepMode(XIic *i2cInstance) {
  * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
  * @return XST_SUCCESS if the operation was successful, otherwise an error code.
  */
-
-int mpu6050_setSleepMode(XIic *i2cInstance) {
-    u8 current;
-    int Status;
-
-    // First, read the current value of the PWR_MGMT_1 register.
-    Status = readRegister(i2cInstance, PWR_MGMT_1, &current, 1);
-    if (Status != XST_SUCCESS) {
-        return Status;
-    }
-
-    // Set the sleep bit (bit 6)
-    if (mode) {
-        current |= ~(1 << 6); // Enable sleep mode.
-
-    // Write the modified value back to the PWR_MGMT_1 register.
-    return writeRegister(i2cInstance, PWR_MGMT_1, current);
+int mpu6050_clearSleepMode(XIic *i2cInstance) {
+    return mpu6050_setSleepMode(i2cInstance, 0); // Directly call setSleepMode with mode = 0 to clear sleep mode.
 }

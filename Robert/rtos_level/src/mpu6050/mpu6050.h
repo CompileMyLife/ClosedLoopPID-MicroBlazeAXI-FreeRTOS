@@ -32,7 +32,7 @@
 void mpu6050_init(XIic *i2cInstance);
 void mpu6050_getGyroData(XIic *i2cInstance, u8 *data, int axis);
 void mpu6050_gyroCfg(XIic *i2cInstance, u8 range);
-void mpu6050_setSleepMode(XIic *i2cInstance);
+void mpu6050_setSleepMode(XIic *i2cInstance, u8 mode);
 void mpu6050_clearSleepMode(XIic *i2cInstance);
 
 #endif // MPU6050_H_
