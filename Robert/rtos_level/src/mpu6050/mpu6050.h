@@ -12,7 +12,6 @@
  * @date 2024-02-23
  */
 
-
 #ifndef MPU6050_H_
 #define MPU6050_H_
 
@@ -28,11 +27,57 @@
 #define GYRO_YOUT_H 0x45
 #define GYRO_ZOUT_H 0x47
 
-// Function prototypes
+/**
+ * Initializes the MPU-6050 sensor.
+ * This involves waking the sensor from sleep mode and preparing it for data collection.
+ *
+ * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
+ */
 void mpu6050_init(XIic *i2cInstance);
+
+/**
+ * Reads gyroscope data from a specified axis (X, Y, or Z) of the MPU-6050 sensor.
+ * The data is read from the sensor's gyroscope registers and returned to the caller.
+ *
+ * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
+ * @param data Buffer where the gyroscope data will be stored.
+ * @param axis The axis from which to read the data (0 for X, 1 for Y, 2 for Z).
+ */
 void mpu6050_getGyroData(XIic *i2cInstance, u8 *data, int axis);
+
+/**
+ * Configures the gyroscope sensitivity of the MPU-6050 sensor.
+ * Allows setting the full-scale range of the gyroscope.
+ *
+ * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
+ * @param range The gyroscope sensitivity range setting. The range parameter
+ *              determines the full-scale range of the gyroscope outputs.
+ *              Valid range settings are:
+ *              - 0x00: ±250 degrees per second (°/s)
+ *              - 0x01: ±500 degrees per second (°/s)
+ *              - 0x02: ±1000 degrees per second (°/s)
+ *              - 0x03: ±2000 degrees per second (°/s)
+ *              These settings correspond to the sensitivity adjustment for the
+ *              gyroscope. A lower range setting provides higher sensitivity
+ *              and finer detection for smaller movements, while a higher range
+ *              setting is suitable for tracking fast or large rotational movements.
+ */
 void mpu6050_gyroCfg(XIic *i2cInstance, u8 range);
+
+
+/**
+ * Sets the MPU-6050 sensor into sleep mode.
+ *
+ * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
+ * @param mode Set to 1 to enable sleep mode, 0 to disable it (wake the sensor up).
+ */
 void mpu6050_setSleepMode(XIic *i2cInstance, u8 mode);
+
+/**
+ * Clears the sleep mode of the MPU-6050 sensor, waking it up.
+ *
+ * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
+ */
 void mpu6050_clearSleepMode(XIic *i2cInstance);
 
 #endif // MPU6050_H_
