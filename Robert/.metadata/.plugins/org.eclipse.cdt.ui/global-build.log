@@ -1,0 +1,58 @@
+Nothing to build in platform 'proj_2_rtos'
+
+18:11:41 **** Incremental Build of configuration Debug for project rtos_level ****
+make all 
+'Building file: ../src/proj_1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/proj_1.o" -ID:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/proj_1.d" -MT"src/proj_1.o" -o "src/proj_1.o" "../src/proj_1.c"
+../src/proj_1.c:111:1: error: unknown type name 'XGpio'
+  111 | XGpio RGBPwmGpio;
+      | ^~~~~
+../src/proj_1.c: In function 'main':
+../src/proj_1.c:160:26: warning: implicit declaration of function 'XGpio_Initialize'; did you mean 'XIntc_Initialize'? [-Wimplicit-function-declaration]
+  160 |         gpioInitStatus = XGpio_Initialize(&RGBPwmGpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+      |                          ^~~~~~~~~~~~~~~~
+      |                          XIntc_Initialize
+../src/proj_1.c:160:56: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_AXI_IIC_0_DEVICE_ID'?
+  160 |         gpioInitStatus = XGpio_Initialize(&RGBPwmGpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                        XPAR_AXI_IIC_0_DEVICE_ID
+../src/proj_1.c:160:56: note: each undeclared identifier is reported only once for each function it appears in
+../src/proj_1.c: In function 'FIT_Handler':
+../src/proj_1.c:224:21: warning: variable 'resetFlag' set but not used [-Wunused-but-set-variable]
+  224 |         static bool resetFlag = false;
+      |                     ^~~~~~~~~
+../src/proj_1.c: In function 'do_init':
+../src/proj_1.c:84:41: error: 'XPAR_MICROBLAZE_0_AXI_INTC_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function); did you mean 'XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_INTR'?
+   84 | #define FIT_INTR_NUM                    XPAR_MICROBLAZE_0_AXI_INTC_FIT_TIMER_0_INTERRUPT_INTR
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proj_1.c:84:41: note: in definition of macro 'FIT_INTR_NUM'
+   84 | #define FIT_INTR_NUM                    XPAR_MICROBLAZE_0_AXI_INTC_FIT_TIMER_0_INTERRUPT_INTR
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proj_1.c: In function 'setRGBPwm':
+../src/proj_1.c:496:9: warning: implicit declaration of function 'XGpio_DiscreteWrite' [-Wimplicit-function-declaration]
+  496 |         XGpio_DiscreteWrite(&RGBPwmGpio, 1, value);
+      |         ^~~~~~~~~~~~~~~~~~~
+../src/proj_1.c: In function 'updateRGB2LED':
+../src/proj_1.c:512:40: warning: implicit declaration of function 'PWM_Analyzer_GetDutyCycle_percent' [-Wimplicit-function-declaration]
+  512 |         uint32_t dutyCycleRedPercent = PWM_Analyzer_GetDutyCycle_percent(PWM_ANALYZER_RED_BASEADDR) << 1;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proj_1.c:95:37: error: 'XPAR_PWM_ANALYZER_0_S00_AXI_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_NEXYS4IO_0_S00_AXI_BASEADDR'?
+   95 | #define PWM_ANALYZER_RED_BASEADDR   XPAR_PWM_ANALYZER_0_S00_AXI_BASEADDR
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proj_1.c:95:37: note: in definition of macro 'PWM_ANALYZER_RED_BASEADDR'
+   95 | #define PWM_ANALYZER_RED_BASEADDR   XPAR_PWM_ANALYZER_0_S00_AXI_BASEADDR
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proj_1.c:96:37: error: 'XPAR_PWM_ANALYZER_1_S00_AXI_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_NEXYS4IO_0_S00_AXI_BASEADDR'?
+   96 | #define PWM_ANALYZER_GREEN_BASEADDR XPAR_PWM_ANALYZER_1_S00_AXI_BASEADDR
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proj_1.c:96:37: note: in definition of macro 'PWM_ANALYZER_GREEN_BASEADDR'
+   96 | #define PWM_ANALYZER_GREEN_BASEADDR XPAR_PWM_ANALYZER_1_S00_AXI_BASEADDR
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proj_1.c:97:37: error: 'XPAR_PWM_ANALYZER_2_S00_AXI_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_NEXYS4IO_0_S00_AXI_BASEADDR'?
+   97 | #define PWM_ANALYZER_BLUE_BASEADDR  XPAR_PWM_ANALYZER_2_S00_AXI_BASEADDR
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proj_1.c:97:37: note: in definition of macro 'PWM_ANALYZER_BLUE_BASEADDR'
+   97 | #define PWM_ANALYZER_BLUE_BASEADDR  XPAR_PWM_ANALYZER_2_S00_AXI_BASEADDR
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/proj_1.o] Error 1

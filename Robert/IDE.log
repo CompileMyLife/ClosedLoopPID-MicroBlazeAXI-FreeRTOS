@@ -1,0 +1,21 @@
+17:49:08 DEBUG : Logs will be stored at 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/IDE.log'.
+17:49:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\temp_xsdb_launch_script.tcl
+17:49:11 INFO  : Registering command handlers for Vitis TCF services
+17:49:12 INFO  : Platform repository initialization has completed.
+17:49:15 INFO  : XSCT server has started successfully.
+17:49:18 INFO  : Successfully done setting XSCT server connection channel  
+17:49:18 INFO  : plnx-install-location is set to ''
+17:49:18 INFO  : Successfully done query RDI_DATADIR 
+17:49:18 INFO  : Successfully done setting workspace for the tool. 
+17:51:15 INFO  : Result from executing command 'getProjects': proj_2_rtos
+17:51:15 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+18:10:38 INFO  : Result from executing command 'getProjects': proj_2_rtos
+18:10:38 INFO  : Result from executing command 'getPlatforms': proj_2_rtos|D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/proj_2_rtos.xpfm;xilinx_vck190_base_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|E:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+18:10:39 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
+18:10:39 INFO  : Updating application flags with new BSP settings...
+18:10:39 INFO  : Successfully updated application flags for project rtos_level.
+18:11:01 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
+18:11:19 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
+18:11:41 INFO  : Checking for BSP changes to sync application flags for project 'rtos_level'...
+18:13:22 INFO  : No changes in MSS file content so sources will not be generated.
+18:55:55 INFO  : No changes in MSS file content so sources will not be generated.
