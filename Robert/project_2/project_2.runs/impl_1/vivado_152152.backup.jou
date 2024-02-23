@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Feb 22 17:24:46 2024
+# Process ID: 152152
+# Current directory: D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/impl_1
+# Command line: vivado.exe -log booleanfpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source booleanfpga.tcl -notrace
+# Log file: D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/impl_1/booleanfpga.vdi
+# Journal file: D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/impl_1\vivado.jou
+# Running On: DESKTOP-T2LGR09, OS: Windows, CPU Frequency: 3394 MHz, CPU Physical cores: 16, Host memory: 34282 MB
+#-----------------------------------------------------------
+source booleanfpga.tcl -notrace
