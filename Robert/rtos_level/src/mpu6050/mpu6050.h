@@ -1,3 +1,18 @@
+/**
+ * @file mpu6050.h
+ * @brief Interface for MPU-6050 Gyroscope/Accelerometer sensor driver.
+ *
+ * This header file declares the functions for interfacing with the MPU-6050 sensor. It includes
+ * function prototypes for initializing the sensor, reading gyroscope data, setting gyro sensitivity,
+ * and managing the sensor's power modes through sleep and wake functions. Designed to facilitate
+ * communication with the MPU-6050 sensor over I2C in embedded systems.
+ *
+ * @author Robert Wilcox
+ * @email wilcox6@pdx.edu
+ * @date 2024-02-23
+ */
+
+
 #ifndef MPU6050_H_
 #define MPU6050_H_
 

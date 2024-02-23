@@ -1,3 +1,16 @@
+/**
+ * @file mpu6050.c
+ * @brief Driver for MPU-6050 Gyroscope/Accelerometer sensor.
+ *
+ * This file contains the implementations of functions to interact with the MPU-6050 sensor,
+ * including initialization, reading gyroscope data, configuring gyro sensitivity, and managing
+ * power modes. Designed for use in real time embedded systems with I2C communication capabilities.
+ *
+ * @author Robert Wilcox
+ * @email wilcox6@pdx.edu
+ * @date 2024-02-23
+ */
+
 #include "mpu6050.h"
 
 /**
