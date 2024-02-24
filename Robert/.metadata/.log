@@ -3,3 +3,48 @@
 !MESSAGE Problems occurred refreshing resources
 !SUBENTRY 1 org.eclipse.core.resources 4 1 2024-02-24 15:40:42.900
 !MESSAGE Problem finding next change, code: 5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-24 15:45:29.091
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-476
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-24 15:45:29.093
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-476
+
+!ENTRY org.eclipse.core.resources 4 568 2024-02-24 15:45:31.106
+!MESSAGE Could not write metadata for '/'.
+!STACK 0
+java.io.FileNotFoundException: D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\.metadata\.plugins\org.eclipse.core.resources\.root\.markers.snap (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1765)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1202)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-02-24 15:45:31.997
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2024-02-24 15:45:31.998
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2024-02-24 15:45:31.998
+!MESSAGE Could not write workspace metadata 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree'.
+!STACK 0
+java.io.FileNotFoundException: D:\PSU\Winter_2024\544\P2\ClosedLoopPID-MicroBlazeAXI-FreeRTOS\Robert\.metadata\.plugins\org.eclipse.core.resources\.root\1.tree (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1381)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1168)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2333)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:509)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-02-24 15:45:32.765
+!MESSAGE The workspace will exit with unsaved changes in this session.
