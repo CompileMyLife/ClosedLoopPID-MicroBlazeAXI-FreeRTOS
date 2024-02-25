@@ -33,3 +33,45 @@ bsp reload
 platform active {proj_2_rtos}
 bsp reload
 platform generate
+bsp config xmdstub_peripheral "none"
+bsp config xmdstub_peripheral "mdm_1"
+bsp write
+bsp reload
+catch {bsp regenerate}
+bsp config xmdstub_peripheral "none"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 
+bsp config total_heap_size "1024"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 
+bsp config total_heap_size "2048"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 
+bsp config total_heap_size "512"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 
+bsp config total_heap_size "4096"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 
+bsp config total_heap_size "8192"
+bsp config use_preemption "true"
+bsp config max_priorities "5"
+bsp config use_task_notifications "false"
+bsp config use_trace_facility "false"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains freertos10_xilinx_domain 
+bsp reload
+bsp reload
+bsp reload

@@ -9,13 +9,16 @@ BEGIN OS
  PARAMETER SYSINTC_SPEC = *
  PARAMETER SYSTMR_DEV = *
  PARAMETER SYSTMR_SPEC = true
+ PARAMETER max_priorities = 5
  PARAMETER software_timers = false
  PARAMETER stdin = axi_uartlite_0
  PARAMETER stdout = axi_uartlite_0
- PARAMETER total_heap_size = 512
+ PARAMETER total_heap_size = 8192
  PARAMETER use_counting_semaphores = false
  PARAMETER use_mutexes = false
  PARAMETER use_recursive_mutexes = false
+ PARAMETER use_task_notifications = false
+ PARAMETER use_trace_facility = false
 END
 
 
