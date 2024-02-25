@@ -2405,3 +2405,716 @@ TRACE::2024-02-22.18:55:55::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544
 
 TRACE::2024-02-22.18:55:55::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
 TRACE::2024-02-22.18:55:55::SCWMssOS::Removing the swdes entry for  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:49::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:49::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:49::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-02-24.16:00:49::SCWPlatform::Opened new HwDB with name booleanfpga
+TRACE::2024-02-24.16:00:49::SCWReader::Active system found as  proj_2_rtos
+TRACE::2024-02-24.16:00:49::SCWReader::Handling sysconfig proj_2_rtos
+TRACE::2024-02-24.16:00:49::SCWDomain::checking for install qemu data   : 
+TRACE::2024-02-24.16:00:49::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:49::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:49::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:49::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:49::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:49::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-02-24.16:00:50::SCWMssOS::No sw design opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::mss exists loading the mss file  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::Opened the sw design from mss  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::Adding the swdes entry D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system
+TRACE::2024-02-24.16:00:50::SCWMssOS::updating the scw layer about changes
+TRACE::2024-02-24.16:00:50::SCWMssOS::Opened the sw design.  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::Saving the mss changes D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-24.16:00:50::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-24.16:00:50::SCWMssOS::Commit changes completed.
+TRACE::2024-02-24.16:00:50::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-02-24.16:00:50::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:50::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:50::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:50::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:50::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:50::SCWReader::No isolation master present  
+TRACE::2024-02-24.16:00:53::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:53::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:53::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:53::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:53::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:53::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:53::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:53::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:53::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:53::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:53::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::In reload Mss file.
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-02-24.16:00:54::SCWMssOS::No sw design opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::mss exists loading the mss file  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::Opened the sw design from mss  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::Adding the swdes entry D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system
+TRACE::2024-02-24.16:00:54::SCWMssOS::updating the scw layer about changes
+TRACE::2024-02-24.16:00:54::SCWMssOS::Opened the sw design.  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::Saving the mss changes D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-24.16:00:54::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-24.16:00:54::SCWMssOS::Commit changes completed.
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:00:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:00:54::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:00:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:00:54::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:00:54::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:00:54::SCWMssOS::Removing the swdes entry for  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+LOG::2024-02-24.16:01:00::SCWPlatform::Started generating the artifacts platform proj_2_rtos
+TRACE::2024-02-24.16:01:00::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-02-24.16:01:00::SCWPlatform::Started generating the artifacts for system configuration proj_2_rtos
+LOG::2024-02-24.16:01:00::SCWSystem::Checking the domain freertos10_xilinx_domain
+LOG::2024-02-24.16:01:00::SCWSystem::Not a boot domain 
+LOG::2024-02-24.16:01:00::SCWSystem::Started Processing the domain freertos10_xilinx_domain
+TRACE::2024-02-24.16:01:00::SCWDomain::Generating domain artifcats
+TRACE::2024-02-24.16:01:00::SCWMssOS::Generating standalone artifcats
+TRACE::2024-02-24.16:01:00::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-02-24.16:01:00::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:00::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:00::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:00::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:01:00::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:01:00::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:01:00::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:01:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:01:00::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:01:00::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-02-24.16:01:00::SCWMssOS::No sw design opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:01:00::SCWMssOS::mss exists loading the mss file  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:01:00::SCWMssOS::Opened the sw design from mss  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:01:00::SCWMssOS::Adding the swdes entry D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system
+TRACE::2024-02-24.16:01:00::SCWMssOS::updating the scw layer about changes
+TRACE::2024-02-24.16:01:00::SCWMssOS::Opened the sw design.  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:01:00::SCWMssOS::Completed writing the mss file at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp
+TRACE::2024-02-24.16:01:00::SCWMssOS::Mss edits present, copying mssfile into export location D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:01:00::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-02-24.16:01:00::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-02-24.16:01:00::SCWDomain::Building the domain as part of full build :  freertos10_xilinx_domain
+TRACE::2024-02-24.16:01:00::SCWMssOS::doing bsp build ... 
+TRACE::2024-02-24.16:01:00::SCWMssOS::System Command Ran  D: & cd  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp & make 
+TRACE::2024-02-24.16:01:00::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-02-24.16:01:00::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+TRACE::2024-02-24.16:01:00::SCWMssOS::OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-02-24.16:01:00::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+TRACE::2024-02-24.16:01:00::SCWMssOS::OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/freertos10_xilinx_v1_12/src"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::make -C microblaze_0/libsrc/freertos10_xilinx_v1_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=m
+TRACE::2024-02-24.16:01:00::SCWMssOS::b-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-com
+TRACE::2024-02-24.16:01:00::SCWMssOS::pare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"includes"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/iic_v3_9/src"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::make -C microblaze_0/libsrc/iic_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2024-02-24.16:01:00::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2024-02-24.16:01:00::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-02-24.16:01:00::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_
+TRACE::2024-02-24.16:01:00::SCWMssOS::COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2024-02-24.16:01:00::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXT
+TRACE::2024-02-24.16:01:00::SCWMssOS::RA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2024-02-24.16:01:00::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+TRACE::2024-02-24.16:01:00::SCWMssOS::_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2024-02-24.16:01:00::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXT
+TRACE::2024-02-24.16:01:00::SCWMssOS::RA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"Running Make libs in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-02-24.16:01:00::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_
+TRACE::2024-02-24.16:01:00::SCWMssOS::COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:00::SCWMssOS::"Compiling nexys4IO..."
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -j 14 --no-print-directory par_libs
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-02-24.16:01:01::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+TRACE::2024-02-24.16:01:01::SCWMssOS::OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-02-24.16:01:01::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+TRACE::2024-02-24.16:01:01::SCWMssOS::OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/freertos10_xilinx_v1_12/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/freertos10_xilinx_v1_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=m
+TRACE::2024-02-24.16:01:01::SCWMssOS::b-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-com
+TRACE::2024-02-24.16:01:01::SCWMssOS::pare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/iic_v3_9/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/iic_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2024-02-24.16:01:01::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2024-02-24.16:01:01::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-02-24.16:01:01::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_
+TRACE::2024-02-24.16:01:01::SCWMssOS::COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"includes"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2024-02-24.16:01:01::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXT
+TRACE::2024-02-24.16:01:01::SCWMssOS::RA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2024-02-24.16:01:01::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+TRACE::2024-02-24.16:01:01::SCWMssOS::_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2024-02-24.16:01:01::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXT
+TRACE::2024-02-24.16:01:01::SCWMssOS::RA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-02-24.16:01:01::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+TRACE::2024-02-24.16:01:01::SCWMssOS::ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-02-24.16:01:01::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+TRACE::2024-02-24.16:01:01::SCWMssOS::ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/freertos10_xilinx_v1_12/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/freertos10_xilinx_v1_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-a
+TRACE::2024-02-24.16:01:01::SCWMssOS::r" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compar
+TRACE::2024-02-24.16:01:01::SCWMssOS::e" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/iic_v3_9/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/iic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+TRACE::2024-02-24.16:01:01::SCWMssOS::AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+TRACE::2024-02-24.16:01:01::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2024-02-24.16:01:01::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COM
+TRACE::2024-02-24.16:01:01::SCWMssOS::PILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2024-02-24.16:01:01::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2024-02-24.16:01:01::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2024-02-24.16:01:01::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-02-24.16:01:01::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_
+TRACE::2024-02-24.16:01:01::SCWMssOS::COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-02-24.16:01:03::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-02-24.16:01:03::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-02-24.16:01:03::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2024-02-24.16:01:03::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2024-02-24.16:01:03::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2024-02-24.16:01:03::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2024-02-24.16:01:03::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2024-02-24.16:01:03::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2024-02-24.16:01:03::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2024-02-24.16:01:03::SCWMssOS::laze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/microblaze_invalidate_
+TRACE::2024-02-24.16:01:03::SCWMssOS::cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/lib/microblaze_invalidate_dcache_range.o microbl
+TRACE::2024-02-24.16:01:03::SCWMssOS::aze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate_icache_range.o microblaze_0/lib/microblaze_scru
+TRACE::2024-02-24.16:01:03::SCWMssOS::b.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o microblaze_0/lib/microblaze_update_dcache.o micr
+TRACE::2024-02-24.16:01:03::SCWMssOS::oblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0/lib/print.o microblaze_0/lib/pvr.o microblaze_0
+TRACE::2024-02-24.16:01:03::SCWMssOS::/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaze_0/lib/xbram_selftest.o microblaze_0/lib/xbram_
+TRACE::2024-02-24.16:01:03::SCWMssOS::sinit.o microblaze_0/lib/xiic.o microblaze_0/lib/xiic_dyn_master.o microblaze_0/lib/xiic_g.o microblaze_0/lib/xiic_intr.o micro
+TRACE::2024-02-24.16:01:03::SCWMssOS::blaze_0/lib/xiic_l.o microblaze_0/lib/xiic_master.o microblaze_0/lib/xiic_multi_master.o microblaze_0/lib/xiic_options.o microb
+TRACE::2024-02-24.16:01:03::SCWMssOS::laze_0/lib/xiic_selftest.o microblaze_0/lib/xiic_sinit.o microblaze_0/lib/xiic_slave.o microblaze_0/lib/xiic_stats.o microblaze
+TRACE::2024-02-24.16:01:03::SCWMssOS::_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/
+TRACE::2024-02-24.16:01:03::SCWMssOS::lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microbla
+TRACE::2024-02-24.16:01:03::SCWMssOS::ze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/
+TRACE::2024-02-24.16:01:03::SCWMssOS::lib/xintc.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.
+TRACE::2024-02-24.16:01:03::SCWMssOS::o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o
+TRACE::2024-02-24.16:01:03::SCWMssOS:: microblaze_0/lib/xtmrctr.o microblaze_0/lib/xtmrctr_g.o microblaze_0/lib/xtmrctr_intr.o microblaze_0/lib/xtmrctr_l.o microblaz
+TRACE::2024-02-24.16:01:03::SCWMssOS::e_0/lib/xtmrctr_options.o microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/xtmrctr_sinit.o microblaze_0/lib/xtmrctr_stats.o
+TRACE::2024-02-24.16:01:03::SCWMssOS:: microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o m
+TRACE::2024-02-24.16:01:03::SCWMssOS::icroblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+TRACE::2024-02-24.16:01:03::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-02-24.16:01:03::SCWMssOS::Copying to export directory.
+TRACE::2024-02-24.16:01:04::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-02-24.16:01:04::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-02-24.16:01:04::SCWSystem::Completed Processing the domain freertos10_xilinx_domain
+LOG::2024-02-24.16:01:04::SCWSystem::Completed Processing the sysconfig proj_2_rtos
+LOG::2024-02-24.16:01:04::SCWPlatform::Completed generating the artifacts for system configuration proj_2_rtos
+TRACE::2024-02-24.16:01:04::SCWPlatform::Started preparing the platform 
+TRACE::2024-02-24.16:01:04::SCWSystem::Writing the bif file for system config proj_2_rtos
+TRACE::2024-02-24.16:01:04::SCWSystem::dir created 
+TRACE::2024-02-24.16:01:04::SCWSystem::Writing the bif 
+TRACE::2024-02-24.16:01:04::SCWPlatform::Started writing the spfm file 
+TRACE::2024-02-24.16:01:04::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-02-24.16:01:04::SCWPlatform::Completed generating the platform
+TRACE::2024-02-24.16:01:04::SCWMssOS::Saving the mss changes D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:01:04::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-24.16:01:04::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-24.16:01:04::SCWMssOS::Commit changes completed.
+TRACE::2024-02-24.16:01:04::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:04::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:04::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:04::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:01:04::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:04::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:01:04::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:01:04::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:01:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:01:04::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:01:04::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:01:04::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:01:04::SCWWriter::formatted JSON is {
+	"platformName":	"proj_2_rtos",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"proj_2_rtos",
+	"platHandOff":	"D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/rtl/booleanfpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/booleanfpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"proj_2_rtos",
+	"systems":	[{
+			"systemName":	"proj_2_rtos",
+			"systemDesc":	"proj_2_rtos",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"proj_2_rtos",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx on microblaze_0",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.12",
+					"mssFile":	"",
+					"md5Digest":	"fb6612cd338eadaed6adfb03e5bb8c47",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"freertos10_xilinx":	{
+							"software_timers":	"false",
+							"total_heap_size":	"512",
+							"use_counting_semaphores":	"false",
+							"use_mutexes":	"false",
+							"use_recursive_mutexes":	"false",
+							"libOptionNames":	["software_timers", "total_heap_size", "use_counting_semaphores", "use_mutexes", "use_recursive_mutexes"]
+						},
+						"libsContainingOptions":	["freertos10_xilinx"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-02-24.16:01:04::SCWPlatform::updated the xpfm file.
+TRACE::2024-02-24.16:01:04::SCWPlatform::Trying to open the hw design at D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:04::SCWPlatform::DSA given D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:04::SCWPlatform::DSA absoulate path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:04::SCWPlatform::DSA directory D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw
+TRACE::2024-02-24.16:01:04::SCWPlatform:: Platform Path D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/hw/booleanfpga.xsa
+TRACE::2024-02-24.16:01:04::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-02-24.16:01:04::SCWPlatform::Trying to set the existing hwdb with name booleanfpga
+TRACE::2024-02-24.16:01:04::SCWPlatform::Opened existing hwdb booleanfpga
+TRACE::2024-02-24.16:01:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-24.16:01:04::SCWMssOS::Checking the sw design at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2024-02-24.16:01:04::SCWMssOS::DEBUG:  swdes dump  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system||
+
+TRACE::2024-02-24.16:01:04::SCWMssOS::Sw design exists and opened at  D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/microblaze_0/freertos10_xilinx_domain/bsp/system.mss

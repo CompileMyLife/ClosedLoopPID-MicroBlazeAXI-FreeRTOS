@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <stdlib.h>
+#include <stdbool.h>
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "nexys4io.h"
+
+// Definitions for peripheral NEXYS4IO
+#define N4IO_DEVICE_ID          XPAR_NEXYS4IO_0_DEVICE_ID
+#define N4IO_BASEADDR           XPAR_NEXYS4IO_0_S00_AXI_BASEADDR
+#define N4IO_HIGHADDR           XPAR_NEXYS4IO_0_S00_AXI_HIGHADDR
+
+int main() {
+    u32 status;
+    u8 buttons;
+    u16 switches;
+
+    
+    uint32_t status;                // status from Xilinx Lib calls
+
+    // Initialize platform
+    init_platform();
+
+    // Initialize Nexys4IO hardware
+    status = NX4IO_initialize(NX4IO_BASEADDR);
+    if (status != XST_SUCCESS) {
+        xil_printf("ERROR: Failed to initialize Nexys4IO hardware.\r\n");
+        return XST_FAILURE;
+    }
+
+    // initialize the Nexys4 driver
+    status = NX4IO_initialize(N4IO_BASEADDR);
+    if (status != XST_SUCCESS){
+        return XST_FAILURE;
+    }
+
+
+    
+    xil_printf("Platform and Nexys4IO Initialized.\r\n");
+    
+    // Main application loop
+    while (1) {
+        // Read button states
+        buttons = NX4IO_getBtns();
+        
+        // Read switch states
+        switches = NX4IO_getSwitches();
+        
+        // Update LEDs to match switch states
+        NX4IO_setLEDs(switches);
+
+        // Display button state on the Seven Segment display
+        // Assuming buttons map directly to a hexadecimal value for simplicity
+        NX4IO_SSEG_putU16Hex(SSEGLO, (u16)buttons);
+
+        // Print button and switch states to the terminal
+        xil_printf("Buttons: 0x%X, Switches: 0x%X\r\n", buttons, switches);
+        
+        // Simple delay loop to prevent flooding the terminal (adjust as needed)
+        for (int i = 0; i < 10000000; i++);
+
+        // Break or continue based on your application needs
+        // break;
+    }
+    
+    cleanup_platform();
+    return 0;
+}

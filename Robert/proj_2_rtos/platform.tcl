@@ -30,3 +30,6 @@ catch {bsp regenerate}
 platform generate
 bsp reload
 bsp reload
+platform active {proj_2_rtos}
+bsp reload
+platform generate

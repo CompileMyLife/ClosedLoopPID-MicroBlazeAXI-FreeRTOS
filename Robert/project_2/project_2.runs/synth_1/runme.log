@@ -17,6 +17,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PSU/Winter_2024/544/P2/Clo
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.cache/ip 
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1045.887 ; gain = 18.684
 Command: read_checkpoint -auto_incremental -incremental D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.srcs/utils_1/imports/synth_1/booleanfpga.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.srcs/utils_1/imports/synth_1/booleanfpga.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -29,38 +30,38 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 101696
+INFO: [Synth 8-7075] Helper process launched with PID 27604
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1848.953 ; gain = 408.566
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1849.203 ; gain = 409.324
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'booleanfpga' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/Proj2_rel/booleanfpga.sv:8]
 INFO: [Synth 8-6157] synthesizing module 'embsys' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:12]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_iic_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_axi_iic_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_iic_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_axi_iic_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_iic_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_axi_iic_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_iic_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_axi_iic_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'iic2intc_irpt' of module 'embsys_axi_iic_0_0' is unconnected for instance 'axi_iic_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:319]
 WARNING: [Synth 8-7071] port 'gpo' of module 'embsys_axi_iic_0_0' is unconnected for instance 'axi_iic_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:319]
 WARNING: [Synth 8-7023] instance 'axi_iic_0' of module 'embsys_axi_iic_0_0' has 27 connections declared, but only 25 given [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:319]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_timer_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_axi_timer_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_timer_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_timer_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_timer_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_axi_timer_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'generateout0' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:345]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:345]
 WARNING: [Synth 8-7071] port 'pwm0' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:345]
 WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'embsys_axi_timer_0_0' has 26 connections declared, but only 23 given [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:345]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_uartlite_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_uartlite_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_bidirec_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_bidirec_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_bidirec_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_bidirec_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_bidirec_1_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_bidirec_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_bidirec_1_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_bidirec_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_clk_wiz_1_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_clk_wiz_1_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_mdm_1_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_mdm_1_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_uartlite_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_uartlite_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_bidirec_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_bidirec_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_bidirec_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_bidirec_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_bidirec_1_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_bidirec_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_bidirec_1_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_bidirec_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_clk_wiz_1_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_clk_wiz_1_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_mdm_1_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_mdm_1_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_mdm_1_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'Interrupt' of module 'embsys_mdm_1_0' is unconnected for instance 'mdm_1' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:407]
 WARNING: [Synth 8-7023] instance 'mdm_1' of module 'embsys_mdm_1_0' has 30 connections declared, but only 29 given [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:407]
-INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_microblaze_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'M_AXI_IC_AWID' of module 'embsys_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:439]
 WARNING: [Synth 8-7071] port 'M_AXI_IC_AWADDR' of module 'embsys_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:439]
 WARNING: [Synth 8-7071] port 'M_AXI_IC_AWLEN' of module 'embsys_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:439]
@@ -80,8 +81,8 @@ WARNING: [Synth 8-7071] port 'M_AXI_IC_ARID' of module 'embsys_microblaze_0_0' i
 WARNING: [Synth 8-7071] port 'M_AXI_DC_AWID' of module 'embsys_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:439]
 WARNING: [Synth 8-7071] port 'M_AXI_DC_ARID' of module 'embsys_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:439]
 WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'embsys_microblaze_0_0' has 126 connections declared, but only 108 given [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:439]
-INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_intc_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_intc_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_intc_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_intc_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_microblaze_0_axi_intc_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_periph_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:842]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_OEGTNN' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:2134]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_OEGTNN' (0#1) [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:2134]
@@ -98,15 +99,15 @@ INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_CO79RP' (0#1) [d
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_QRRRG2' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3174]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_QRRRG2' (0#1) [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3174]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1L6HT0J' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3320]
-INFO: [Synth 8-6157] synthesizing module 'embsys_auto_pc_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_auto_pc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_auto_pc_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_auto_pc_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_auto_pc_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_auto_pc_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1L6HT0J' (0#1) [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3320]
 INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1SBZLQP' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3602]
-INFO: [Synth 8-6157] synthesizing module 'embsys_auto_pc_1' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_auto_pc_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_auto_pc_1' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_auto_pc_1' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_auto_pc_1' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_auto_pc_1_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1SBZLQP' (0#1) [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3602]
-INFO: [Synth 8-6157] synthesizing module 'embsys_xbar_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_xbar_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_xbar_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_xbar_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_xbar_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_xbar_0_stub.v:5]
 WARNING: [Synth 8-689] width (15) of port connection 'm_axi_arprot' does not match port width (18) of module 'embsys_xbar_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:2095]
 WARNING: [Synth 8-689] width (15) of port connection 'm_axi_awprot' does not match port width (18) of module 'embsys_xbar_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:2099]
 WARNING: [Synth 8-689] width (2) of port connection 's_axi_awready' does not match port width (3) of module 'embsys_xbar_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:2119]
@@ -115,20 +116,20 @@ WARNING: [Synth 8-689] width (2) of port connection 's_axi_bvalid' does not matc
 WARNING: [Synth 8-689] width (2) of port connection 's_axi_wready' does not match port width (3) of module 'embsys_xbar_0' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:2129]
 INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_periph_0' (0#1) [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:842]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1SR2TDT' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:2940]
-INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_bram_if_cntlr_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_bram_if_cntlr_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_v10_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_dlmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_v10_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_bram_if_cntlr_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_bram_if_cntlr_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_v10_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_v10_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_dlmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'embsys_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3086]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'embsys_dlmb_v10_0' has 25 connections declared, but only 24 given [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3086]
-INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_bram_if_cntlr_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_bram_if_cntlr_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_v10_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_ilmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_v10_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_bram_if_cntlr_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_bram_if_cntlr_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_v10_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_v10_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_ilmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'embsys_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3132]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'embsys_ilmb_v10_0' has 25 connections declared, but only 24 given [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3132]
-INFO: [Synth 8-6157] synthesizing module 'embsys_lmb_bram_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_lmb_bram_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_lmb_bram_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_lmb_bram_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_lmb_bram_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_lmb_bram_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'embsys_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3157]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'embsys_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3157]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'embsys_lmb_bram_0' has 16 connections declared, but only 14 given [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:3157]
@@ -137,10 +138,10 @@ INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_xlconcat_0' [d:/PS
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_xlconcat_0' (0#1) [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_xlconcat_0/synth/embsys_microblaze_0_xlconcat_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'embsys_nexys4io_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_nexys4io_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_nexys4io_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_nexys4io_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_rst_clk_wiz_1_100M_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_rst_clk_wiz_1_100M_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-20304-DESKTOP-T2LGR09/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_nexys4io_0_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_nexys4io_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_nexys4io_0_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_nexys4io_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_rst_clk_wiz_1_100M_0' [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_rst_clk_wiz_1_100M_0' (0#1) [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/.Xil/Vivado-7448-DESKTOP-T2LGR09/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'embsys_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:831]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'embsys_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:831]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'embsys_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/synth/embsys.v:831]
@@ -248,18 +249,18 @@ WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1951.406 ; gain = 511.020
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1951.395 ; gain = 511.516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1951.406 ; gain = 511.020
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1951.395 ; gain = 511.516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1951.406 ; gain = 511.020
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1951.395 ; gain = 511.516
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1951.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1951.395 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -298,8 +299,8 @@ Parsing XDC File [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS
 Finished Parsing XDC File [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_axi_iic_0_0/embsys_axi_iic_0_0/embsys_axi_iic_0_0_in_context.xdc] for cell 'embsys_i/axi_iic_0'
 Parsing XDC File [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_nexys4io_0_0/embsys_nexys4io_0_0/embsys_nexys4io_0_0_in_context.xdc] for cell 'embsys_i/nexys4io_0'
 Finished Parsing XDC File [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_nexys4io_0_0/embsys_nexys4io_0_0/embsys_nexys4io_0_0_in_context.xdc] for cell 'embsys_i/nexys4io_0'
-Parsing XDC File [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_0_0/embsys_bidirec_0_0/embsys_bidirec_0_0_in_context.xdc] for cell 'embsys_i/bidirec_0'
-Finished Parsing XDC File [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_0_0/embsys_bidirec_0_0/embsys_bidirec_0_0_in_context.xdc] for cell 'embsys_i/bidirec_0'
+Parsing XDC File [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_0_0/embsys_bidirec_0_0/embsys_bidirec_1_0_in_context.xdc] for cell 'embsys_i/bidirec_0'
+Finished Parsing XDC File [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_0_0/embsys_bidirec_0_0/embsys_bidirec_1_0_in_context.xdc] for cell 'embsys_i/bidirec_0'
 Parsing XDC File [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_1_0/embsys_bidirec_1_0/embsys_bidirec_1_0_in_context.xdc] for cell 'embsys_i/bidirec_1'
 Finished Parsing XDC File [d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_1_0/embsys_bidirec_1_0/embsys_bidirec_1_0_in_context.xdc] for cell 'embsys_i/bidirec_1'
 Parsing XDC File [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/Proj2_rel/booleanfpga.xdc]
@@ -310,32 +311,32 @@ Parsing XDC File [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS
 Finished Parsing XDC File [D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1990.180 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2007.320 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1990.180 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'embsys_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0_in_context.xdc, line 3).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for sclk_io. (constraint file  d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_0_0/embsys_bidirec_0_0/embsys_bidirec_0_0_in_context.xdc, line 1).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sclk_io. (constraint file  d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_0_0/embsys_bidirec_0_0/embsys_bidirec_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for sclk_io. (constraint file  d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_0_0/embsys_bidirec_0_0/embsys_bidirec_1_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sclk_io. (constraint file  d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_0_0/embsys_bidirec_0_0/embsys_bidirec_1_0_in_context.xdc, line 2).
 Applied set_property IO_BUFFER_TYPE = NONE for sda_io. (constraint file  d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_1_0/embsys_bidirec_1_0/embsys_bidirec_1_0_in_context.xdc, line 1).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for sda_io. (constraint file  d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_1_0/embsys_bidirec_1_0/embsys_bidirec_1_0_in_context.xdc, line 2).
 Applied set_property KEEP_HIERARCHY = SOFT for embsys_i. (constraint file  auto generated constraint).
@@ -361,10 +362,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for embsys_i/nexys4io_0. (constraint 
 Applied set_property KEEP_HIERARCHY = SOFT for embsys_i/bidirec_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for embsys_i/bidirec_1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -389,25 +390,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -425,37 +426,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -514,17 +515,17 @@ Report Cell Usage:
 |23    |OBUF                         |    47|
 +------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1990.527 ; gain = 550.648
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 2007.461 ; gain = 511.020
-Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2007.461 ; gain = 567.074
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1990.527 ; gain = 511.516
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1990.527 ; gain = 550.648
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2007.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1990.527 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1992.090 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -532,9 +533,9 @@ Synth Design complete, checksum: 848fd5c8
 INFO: [Common 17-83] Releasing license: Synthesis
 95 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.461 ; gain = 942.477
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1992.090 ; gain = 927.672
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
 INFO: [Common 17-1381] The checkpoint 'D:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.runs/synth_1/booleanfpga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file booleanfpga_utilization_synth.rpt -pb booleanfpga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Feb 22 17:36:22 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 24 15:49:55 2024...

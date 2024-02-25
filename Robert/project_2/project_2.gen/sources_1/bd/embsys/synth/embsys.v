@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Thu Feb 22 12:53:03 2024
+//Date        : Sat Feb 24 15:49:02 2024
 //Host        : DESKTOP-T2LGR09 running 64-bit major release  (build 9200)
 //Command     : generate_target embsys.bd
 //Design      : embsys
@@ -53,8 +53,8 @@ module embsys
   inout sda_io;
   output [6:0]seg_0;
   input [15:0]sw_0;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart " *) input usb_uart_rxd;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart " *) output usb_uart_txd;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart RxD" *) input usb_uart_rxd;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart TxD" *) output usb_uart_txd;
 
   wire Net;
   wire Net1;

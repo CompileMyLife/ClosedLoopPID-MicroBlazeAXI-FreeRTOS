@@ -1,18 +1,41 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Thu Feb 22 12:54:47 2024
+// Date        : Thu Feb 22 12:54:45 2024
 // Host        : DESKTOP-T2LGR09 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_bidirec_0_0/embsys_bidirec_0_0_sim_netlist.v
-// Design      : embsys_bidirec_0_0
+// Command     : write_verilog -force -mode funcsim -rename_top embsys_bidirec_0_0 -prefix
+//               embsys_bidirec_0_0_ embsys_bidirec_1_0_sim_netlist.v
+// Design      : embsys_bidirec_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7s50csga324-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "embsys_bidirec_0_0,bidirec,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
+module embsys_bidirec_0_0_bidirec
+   (outp,
+    bidir,
+    inp,
+    oe);
+  output outp;
+  inout bidir;
+  input inp;
+  input oe;
+
+  wire bidir;
+  wire inp;
+  wire oe;
+  wire outp;
+
+  (* BOX_TYPE = "PRIMITIVE" *) 
+  IOBUF IIC_0_scl_iobuf
+       (.I(inp),
+        .IO(bidir),
+        .O(outp),
+        .T(oe));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "embsys_bidirec_1_0,bidirec,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
 (* X_CORE_INFO = "bidirec,Vivado 2022.2" *) 
 (* NotValidForBitStream *)
 module embsys_bidirec_0_0
@@ -39,30 +62,6 @@ module embsys_bidirec_0_0
         .inp(inp),
         .oe(oe),
         .outp(outp));
-endmodule
-
-(* ORIG_REF_NAME = "bidirec" *) 
-module embsys_bidirec_0_0_bidirec
-   (outp,
-    bidir,
-    inp,
-    oe);
-  output outp;
-  inout bidir;
-  input inp;
-  input oe;
-
-  wire bidir;
-  wire inp;
-  wire oe;
-  wire outp;
-
-  (* BOX_TYPE = "PRIMITIVE" *) 
-  IOBUF IIC_0_scl_iobuf
-       (.I(inp),
-        .IO(bidir),
-        .O(outp),
-        .T(oe));
 endmodule
 `ifndef GLBL
 `define GLBL

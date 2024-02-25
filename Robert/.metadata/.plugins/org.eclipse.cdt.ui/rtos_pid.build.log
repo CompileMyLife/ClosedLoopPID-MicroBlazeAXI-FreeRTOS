@@ -1,0 +1,21 @@
+17:16:36 **** Incremental Build of configuration Debug for project rtos_pid ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: rtos_pid.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/proj_2_rtos/export/proj_2_rtos/sw/proj_2_rtos/freertos10_xilinx_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "rtos_pid.elf"  ./src/main.o ./src/mpu6050.o ./src/platform.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: rtos_pid.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size rtos_pid.elf  |tee "rtos_pid.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26984	    420	   3476	  30880	   78a0	rtos_pid.elf
+'Finished building: rtos_pid.elf.size'
+' '
+
+17:16:36 Build Finished (took 645ms)
+

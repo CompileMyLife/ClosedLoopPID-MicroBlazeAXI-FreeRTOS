@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1708652140" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/booleanfpga.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1708818547" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/booleanfpga.dcp">
   <File Type="PA-TCL" Name="booleanfpga.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="booleanfpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="booleanfpga_reports.tcl"/>
@@ -64,9 +64,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="embsys_microblaze_0_0"/>
@@ -83,8 +81,4 @@
   <BlockFileSet Type="BlockSrcs" Name="embsys_axi_uartlite_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_axi_iic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_nexys4io_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embsys_bidirec_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embsys_bidirec_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embsys_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embsys_auto_pc_1"/>
 </GenRun>

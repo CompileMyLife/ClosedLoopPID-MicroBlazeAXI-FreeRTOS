@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Thu Feb 22 17:38:30 2024
+| Date         : Sat Feb 24 15:52:18 2024
 | Host         : DESKTOP-T2LGR09 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file booleanfpga_clock_utilization_routed.rpt
 | Design       : booleanfpga
@@ -51,8 +51,8 @@ Table of Contents
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                  | Driver Pin                                                               | Net                                                               |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+------------------------------------------------------------------------+--------------------------------------------------------------------------+-------------------------------------------------------------------+
 | g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 4 |        4874 |               0 |       10.000 | clk_out1_embsys_clk_wiz_1_0                                            | embsys_i/clk_wiz_1/inst/clkout1_buf/O                                    | embsys_i/clk_wiz_1/inst/clk_out1                                  |
-| g1        | src1      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y0  | n/a          |                 4 |         269 |               0 |       40.000 | embsys_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK                 | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_DRCK/Using_FPGA.Native/O   | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_DRCK/Dbg_Clk_0      |
-| g1        | src2      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y0  | n/a          |                 4 |         269 |               0 |       40.000 | embsys_i/mdm_1/U0/MDM_Core_I1/Use_Dbg_Reg_Access.DbgReg_DRCK_i_reg/Q   | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_DRCK/Using_FPGA.Native/O   | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_DRCK/Dbg_Clk_0      |
+| g1        | src1      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y0  | n/a          |                 4 |         269 |               0 |       33.333 | embsys_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK                 | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_DRCK/Using_FPGA.Native/O   | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_DRCK/Dbg_Clk_0      |
+| g1        | src2      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y0  | n/a          |                 4 |         269 |               0 |       33.333 | embsys_i/mdm_1/U0/MDM_Core_I1/Use_Dbg_Reg_Access.DbgReg_DRCK_i_reg/Q   | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_DRCK/Using_FPGA.Native/O   | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_DRCK/Dbg_Clk_0      |
 | g2        | src3      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y1  | n/a          |                 2 |          43 |               1 |       33.333 | embsys_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE               | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_UPDATE/Using_FPGA.Native/O | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_UPDATE/Dbg_Update_0 |
 | g2        | src4      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y1  | n/a          |                 2 |          43 |               1 |       33.333 | embsys_i/mdm_1/U0/MDM_Core_I1/Use_Dbg_Reg_Access.DbgReg_UPDATE_i_reg/Q | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_UPDATE/Using_FPGA.Native/O | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_UPDATE/Dbg_Update_0 |
 | g3        | src5      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |                 1 |           1 |               0 |       10.000 | clkfbout_embsys_clk_wiz_1_0                                            | embsys_i/clk_wiz_1/inst/clkf_buf/O                                       | embsys_i/clk_wiz_1/inst/clkfbout_buf_embsys_clk_wiz_1_0           |
@@ -138,7 +138,7 @@ All Modules
 +-----------+-----------------+-------------------+----------+-------------+----------------+-------------+----------+----------------+----------+--------------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock    | Period (ns) | Waveform (ns)  | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                          |
 +-----------+-----------------+-------------------+----------+-------------+----------------+-------------+----------+----------------+----------+--------------------------------------------------------------+
-| g1        | BUFGCTRL/O      | n/a               | Multiple |      40.000 | {0.000 20.000} |         269 |        0 |              0 |        0 | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_DRCK/Dbg_Clk_0 |
+| g1        | BUFGCTRL/O      | n/a               | Multiple |      33.333 | {0.000 16.667} |         269 |        0 |              0 |        0 | embsys_i/mdm_1/U0/Use_Dbg_Reg_Access.BUFGCTRL_DRCK/Dbg_Clk_0 |
 +-----------+-----------------+-------------------+----------+-------------+----------------+-------------+----------+----------------+----------+--------------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types

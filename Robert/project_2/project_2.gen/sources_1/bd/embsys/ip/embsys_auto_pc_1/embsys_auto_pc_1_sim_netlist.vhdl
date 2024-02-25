@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
 -- Date        : Thu Feb 22 12:56:15 2024
 -- Host        : DESKTOP-T2LGR09 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_auto_pc_1/embsys_auto_pc_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top embsys_auto_pc_1 -prefix
+--               embsys_auto_pc_1_ embsys_auto_pc_1_sim_netlist.vhdl
 -- Design      : embsys_auto_pc_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -40,8 +40,6 @@ entity embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_incr_cmd is
     \axaddr_incr_reg[3]_i_2\ : in STD_LOGIC;
     m_axi_arready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_incr_cmd : entity is "axi_protocol_converter_v2_1_27_b2s_incr_cmd";
 end embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_incr_cmd;
 
 architecture STRUCTURE of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_incr_cmd is
@@ -770,8 +768,6 @@ entity embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm is
     r_full : in STD_LOGIC;
     \FSM_sequential_state_reg[0]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm : entity is "axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm";
 end embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm;
 
 architecture STRUCTURE of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm is
@@ -1143,8 +1139,6 @@ entity embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_simple_fifo is
     SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_simple_fifo : entity is "axi_protocol_converter_v2_1_27_b2s_simple_fifo";
 end embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_simple_fifo;
 
 architecture STRUCTURE of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_simple_fifo is
@@ -2122,8 +2116,6 @@ entity embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_wrap_cmd is
     \wrap_boundary_axaddr_r_reg[6]_0\ : in STD_LOGIC_VECTOR ( 6 downto 0 );
     \axaddr_wrap_reg[11]_0\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_wrap_cmd : entity is "axi_protocol_converter_v2_1_27_b2s_wrap_cmd";
 end embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_wrap_cmd;
 
 architecture STRUCTURE of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_wrap_cmd is
@@ -2777,8 +2769,6 @@ entity embsys_auto_pc_1_axi_register_slice_v2_1_27_axic_register_slice is
     sel_first : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_register_slice_v2_1_27_axic_register_slice : entity is "axi_register_slice_v2_1_27_axic_register_slice";
 end embsys_auto_pc_1_axi_register_slice_v2_1_27_axic_register_slice;
 
 architecture STRUCTURE of embsys_auto_pc_1_axi_register_slice_v2_1_27_axic_register_slice is
@@ -6076,8 +6066,6 @@ entity embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_cmd_translator is
     \axaddr_wrap_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \axaddr_incr_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_cmd_translator : entity is "axi_protocol_converter_v2_1_27_b2s_cmd_translator";
 end embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_cmd_translator;
 
 architecture STRUCTURE of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_cmd_translator is
@@ -6258,8 +6246,6 @@ entity embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_r_channel is
     \in\ : in STD_LOGIC_VECTOR ( 33 downto 0 );
     SS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_r_channel : entity is "axi_protocol_converter_v2_1_27_b2s_r_channel";
 end embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_r_channel;
 
 architecture STRUCTURE of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_r_channel is
@@ -6368,8 +6354,6 @@ entity embsys_auto_pc_1_axi_register_slice_v2_1_27_axi_register_slice is
     m_valid_i_reg_0 : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_register_slice_v2_1_27_axi_register_slice : entity is "axi_register_slice_v2_1_27_axi_register_slice";
 end embsys_auto_pc_1_axi_register_slice_v2_1_27_axi_register_slice;
 
 architecture STRUCTURE of embsys_auto_pc_1_axi_register_slice_v2_1_27_axi_register_slice is
@@ -6475,8 +6459,6 @@ entity embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_ar_channel is
     \wrap_second_len_r_reg[3]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \wrap_boundary_axaddr_r_reg[6]\ : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_ar_channel : entity is "axi_protocol_converter_v2_1_27_b2s_ar_channel";
 end embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_ar_channel;
 
 architecture STRUCTURE of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s_ar_channel is
@@ -6647,8 +6629,6 @@ entity embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s is
     s_axi_rready : in STD_LOGIC;
     aresetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s : entity is "axi_protocol_converter_v2_1_27_b2s";
 end embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s;
 
 architecture STRUCTURE of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_b2s is
@@ -7020,8 +7000,6 @@ entity embsys_auto_pc_1_axi_protocol_converter_v2_1_27_axi_protocol_converter is
   attribute C_TRANSLATION_MODE of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_axi_protocol_converter : entity is 2;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_axi_protocol_converter : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_axi_protocol_converter : entity is "axi_protocol_converter_v2_1_27_axi_protocol_converter";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of embsys_auto_pc_1_axi_protocol_converter_v2_1_27_axi_protocol_converter : entity is 1;
   attribute P_AXI4 : integer;

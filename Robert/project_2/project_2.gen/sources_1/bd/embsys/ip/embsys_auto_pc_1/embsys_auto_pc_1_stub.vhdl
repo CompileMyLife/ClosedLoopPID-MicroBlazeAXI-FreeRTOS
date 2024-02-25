@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
 -- Date        : Thu Feb 22 12:56:15 2024
 -- Host        : DESKTOP-T2LGR09 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               d:/PSU/Winter_2024/544/P2/ClosedLoopPID-MicroBlazeAXI-FreeRTOS/Robert/project_2/project_2.gen/sources_1/bd/embsys/ip/embsys_auto_pc_1/embsys_auto_pc_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top embsys_auto_pc_1 -prefix
+--               embsys_auto_pc_1_ embsys_auto_pc_1_stub.vhdl
 -- Design      : embsys_auto_pc_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s50csga324-1
