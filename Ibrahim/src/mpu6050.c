@@ -75,14 +75,26 @@ int readRegister(XIic *i2cInstance, u8 reg, u8 *buffer, int length) {
 }
 
 /**
- * Initializes the MPU-6050 device, waking it up from sleep mode.
+ * Initializes the MPU-6050 device, waking it up from sleep mode and reset.
  * 
  * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
  * @return XST_SUCCESS if the operation was successful, otherwise an error code.
  */
 int mpu6050_init(XIic *i2cInstance) {
-    // Wake the MPU6050 up by writing 0x00 to the PWR_MGMT_1 register.
-    return writeRegister(i2cInstance, PWR_MGMT_1, 0x00);
+    // Reset/WakeUp the MPU6050 up by writing 0x10 to the PWR_MGMT_1 register.
+    return writeRegister(i2cInstance, PWR_MGMT_1, 0x80);
+}
+
+/**
+ * Fetches the 6 bit I2C address from the MPU-6050.
+ *
+ * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
+ * @param data Pointer to a buffer where the gyroscope data will be stored.
+ * @return XST_SUCCESS if the operation was successful, otherwise an error code.
+ */
+int mpu6050_getID(XIic *i2cInstance, u8 *data) {
+	// Retrieve the 6 bit I2C address from WHO_AM_I register
+	return readRegister(i2cInstance, WHO_AM_I, data, 1); // Read one byte of data from the register.
 }
 
 /**

@@ -21,12 +21,12 @@
 #define MPU6050_ADDRESS 0x68
 
 // MPU-6050 Register Addresses
-#define PWR_MGMT_1 0x6B
-#define GYRO_CONFIG 0x1B
-#define GYRO_XOUT_H 0x43
-#define GYRO_YOUT_H 0x45
-#define GYRO_ZOUT_H 0x47
-
+#define PWR_MGMT_1      0x6B
+#define GYRO_CONFIG     0x1B
+#define GYRO_XOUT_H     0x43
+#define GYRO_YOUT_H     0x45
+#define GYRO_ZOUT_H     0x47
+#define WHO_AM_I	    0x75
 /**
  * Initializes the MPU-6050 sensor.
  * This involves waking the sensor from sleep mode and preparing it for data collection.
@@ -34,6 +34,15 @@
  * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
  */
 int mpu6050_init(XIic *i2cInstance);
+
+/**
+ * Reads 6 bit I2C address from the MPU-6050 sensor.
+ * The data is read from the sensor's WHO_AM_I register and returned to the caller.
+ *
+ * @param i2cInstance Pointer to the initialized XIic instance for I2C communication.
+ * @param data Buffer where the gyroscope data will be stored.
+ */
+int mpu6050_getID(XIic *i2cInstance, u8 *data);
 
 /**
  * Reads gyroscope data from a specified axis (X, Y, or Z) of the MPU-6050 sensor.
