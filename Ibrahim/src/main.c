@@ -130,6 +130,7 @@ void vPIDTask(void *pvParameters) {
 // Wait for 'r' or 'R' input to resume tasks
 void vMenuTask(void *pvParameters) {
 	uint8_t c;
+	char t_angle_str[3];  // largest num is three characters {'1', '8', '0', '\0'}
 	for (;;) {
     	print("INFO:vMenuTask()\tECE 544 Project 2\r\n");
     	print("INFO:vMenuTask()\tBy Ibrahim Binmahfood (ibrah5@pdx.edu)\r\n");
@@ -141,17 +142,16 @@ void vMenuTask(void *pvParameters) {
 
         if ((c == 'r') || (c == 'R')){
             print("Set the Target Angle = \r\n");
-
-            for (int i = 0; i < 3; i++){
-            	t_angle = XUartLite_RecvByte(UART_BASEADDR);
-            }
-
-            if ((t_angle >= 0) && (t_angle <= 180)) {
-                vTaskSuspend(xMenu);
-            	vTaskResume(xData);
-                vTaskResume(xPID);
-                vTaskResume(xExit);
-            }
+            
+            if (fgets(t_angle_str, 3, stdin) != NULL) {
+            	t_angle = atoi(t_angle_str);	// convert str->int
+            	if ((t_angle >= 0) && (t_angle <= 180)) {
+					vTaskResume(xData);
+					vTaskResume(xPID);
+					vTaskResume(xExit);
+					vTaskSuspend(xMenu);
+				}
+         	}
 
             print("ERROR:vMenuTask()\tQuery User for Target Angle Failed\r\n");
         }
