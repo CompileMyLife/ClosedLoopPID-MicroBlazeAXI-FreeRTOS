@@ -122,7 +122,7 @@ void vPIDTask(void *pvParameters) {
     pid.propGain = Kp;
     pid.integratGain = Ki;
     pid.derGain = Kd;
-    pid.integratMax = 100; // Example limits
+    pid.integratMax = 100;
     pid.integratMin = -100;
     pid.integratState = 0;
     pid.derState = 0;

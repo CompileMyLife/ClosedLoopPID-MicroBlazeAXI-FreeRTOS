@@ -9,7 +9,7 @@
 
 // Global instance of the IIC driver
 XIic IicInstance;
-static uint8_t currentFsSel = GYRO_FS_SEL_250DPS; // Default setting, update this when you change FS_SEL
+static uint8_t currentFsSel = GYRO_FS_SEL_250DPS; // Default setting
 
 
 int InitIic(XIic *IicInstancePtr, u16 DeviceId) {
