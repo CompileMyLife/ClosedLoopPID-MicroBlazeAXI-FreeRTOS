@@ -20,6 +20,8 @@
 #include "nexys4IO.h"
 #include "pid_controller.h"
 #include "Fusion.h"
+#include "task.h"
+
 
 
 
@@ -41,6 +43,7 @@
 
 #define GYRO_TO_RADIANS 0.00013323124061025415
 #define ACCEL_TO_G (1.0 / 16384.0)
+
 
 
 // Function prototypes
@@ -96,6 +99,9 @@ GyroData gyroData;
 // Fusion stuff
 FusionAhrs ahrs;
 
+void updateLEDs(real_t currentAngle, real_t targetAngle);
+void readAngle(char* buffer, int bufferSize);
+
 // Initialize system state
 SystemState systemState;
 int main(void) {
@@ -118,7 +124,7 @@ int main(void) {
 
     xTaskCreate(vPIDTask,  "PID  Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1, &xPID);
     xTaskCreate(vMenuTask, "MENU Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1, &xMenu);
-    xTaskCreate(vDataTask, "DATA Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1, &xData);
+    xTaskCreate(vDataTask, "DATA Task", configMINIMAL_STACK_SIZE * 3, NULL, tskIDLE_PRIORITY + 1, &xData);
     xTaskCreate(vExitTask, "EXIT Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1, &xExit);
 
     vTaskSuspend(xData);
@@ -155,10 +161,10 @@ void vPIDTask(void *pvParameters) {
 
     for (;;) {
 
-    	// Fetch the current angle from the sensor
-    	real_t measuredAngle = systemState.currentAngle;
-    	real_t targetAngle = systemState.targetAngle;
-    	//xil_printf("Measured angle at top of PID: %d\r\n", measuredAngle);
+        // Fetch the current angle from the sensor
+        real_t measuredAngle = systemState.currentAngle;
+        real_t targetAngle = systemState.targetAngle;
+        //xil_printf("Measured angle at top of PID: %d\r\n", measuredAngle);
 
         uint8_t buttons = NX4IO_getBtns();
         buttons = bttn_formatter(&buttons);
@@ -197,10 +203,11 @@ void vPIDTask(void *pvParameters) {
 // Wait for 'r' or 'R' input to resume tasks
 void vMenuTask(void *pvParameters) {
 
-	xil_printf("Entered menu\r\n");
+    xil_printf("Entered menu\r\n");
     uint8_t c;
-    char t_angle_str[4];  // largest num is three characters {'1', '8', '0', '\0'}
+    char t_angle_str[5];  // largest num is four characters {'1', '8', '0', \0'}
     for (;;) {
+
         print("INFO:vMenuTask()\tECE 544 Project 2\r\n");
         print("INFO:vMenuTask()\tBy Ibrahim Binmahfood (ibrah5@pdx.edu)\r\n");
         print("INFO:vMenuTask()\tand Robert Wilcox     (rwilcox@pdx.edu)\r\n");
@@ -212,92 +219,91 @@ void vMenuTask(void *pvParameters) {
         print("Do you wish to use read mode or data gather mode? Choose 'R/r' or 'D/d':\r\n");
         displayMode = XUartLite_RecvByte(UART_BASEADDR);
 
-        if ((c == 'r') || (c == 'R')){
+        if ((c == 'r') || (c == 'R')) {
             print("Set the Target Angle = \r\n");
             
-            if (fgets(t_angle_str, 3, stdin) != NULL) {
-                systemState.targetAngle = atoi(t_angle_str);    // convert str->int
-                if ((systemState.targetAngle >= 0) && (systemState.targetAngle <= 180)) {
+            // Call readAngle to fill t_angle_str with user input
+            readAngle(t_angle_str, sizeof(t_angle_str));
 
-                    xil_printf("User entered %d degrees\r\n", atoi(t_angle_str)); // Print the target angle
-
-                    xil_printf("Target Angle set to: %d degrees\r\n", (int)systemState.targetAngle); // Print the target angle
-
-                    vTaskResume(xData);
-                    vTaskResume(xPID);
-                    vTaskResume(xExit);
-                    vTaskSuspend(xMenu);
-                } else {
-                    print("ERROR:vMenuTask()\tInvalid Target Angle. Please enter a value between 0 and 180.\r\n");
-                }
+            // After readAngle, t_angle_str contains the input terminated by '\0'
+            systemState.targetAngle = atoi(t_angle_str);    // Convert string to integer
+            
+            // Validate and use the target angle as before
+            if ((systemState.targetAngle >= 0) && (systemState.targetAngle <= 180)) {
+                xil_printf("User entered %d degrees\r\n", systemState.targetAngle); // Print the target angle
+                xil_printf("Target Angle set to: %d degrees\r\n", systemState.targetAngle); // Print the target angle
+                vTaskResume(xData);
+                vTaskResume(xPID);
+                vTaskResume(xExit);
+                vTaskSuspend(xMenu);
             } else {
-                print("ERROR:vMenuTask()\tQuery User for Target Angle Failed\r\n");
+                print("ERROR:vMenuTask()\tInvalid Target Angle. Please enter a value between 0 and 180.\r\n");
             }
         }
-
-        vTaskDelay(pdMS_TO_TICKS(500)); // Simulate control task workload
     }
+
 }
 
 // Collect data from MPU6050 sensor
 // Compute angles and store them in a variable
 void vDataTask(void *pvParameters) {
 
-	TickType_t previousTick = xTaskGetTickCount();
-	int16_t offsetX = gyroData.offsetX;
-	int16_t offsetY = gyroData.offsetY;
-	int16_t offsetZ = gyroData.offsetZ;
 
-	for (;;) {
-	        int16_t gyroX, gyroY, gyroZ;
-	        int16_t accelX, accelY, accelZ;
+    TickType_t previousTick = xTaskGetTickCount();
+    int16_t offsetX = gyroData.offsetX;
+    int16_t offsetY = gyroData.offsetY;
+    int16_t offsetZ = gyroData.offsetZ;
 
-	        // Fetch gyroscope data
-	        mpu6050_getGyroData(&i2c_dev, &gyroX, X_AXIS);
-	        mpu6050_getGyroData(&i2c_dev, &gyroY, Y_AXIS);
-	        mpu6050_getGyroData(&i2c_dev, &gyroZ, Z_AXIS);
+    for (;;) {
+            int16_t gyroX, gyroY, gyroZ;
+            int16_t accelX, accelY, accelZ;
 
-	        // Fetch accelerometer data
-	        // Assuming mpu6050_getAccelData function exists
-	        mpu6050_getAccelData(&i2c_dev, &accelX, &accelY, &accelZ);
+            // Fetch gyroscope data
+            mpu6050_getGyroData(&i2c_dev, &gyroX, X_AXIS);
+            mpu6050_getGyroData(&i2c_dev, &gyroY, Y_AXIS);
+            mpu6050_getGyroData(&i2c_dev, &gyroZ, Z_AXIS);
 
-	        // Apply offsets and convert to required units
-	        gyroX -= offsetX;
-	        gyroY -= offsetY;
-	        gyroZ -= offsetZ;
+            // Fetch accelerometer data
+            // Assuming mpu6050_getAccelData function exists
+            mpu6050_getAccelData(&i2c_dev, &accelX, &accelY, &accelZ);
 
-	        FusionVector gyroscope = {
-	            .axis.x = gyroX * GYRO_TO_RADIANS,
-	            .axis.y = gyroY * GYRO_TO_RADIANS,
-	            .axis.z = gyroZ * GYRO_TO_RADIANS,
-	        };
+            // Apply offsets and convert to required units
+            gyroX -= offsetX;
+            gyroY -= offsetY;
+            gyroZ -= offsetZ;
 
-	        FusionVector accelerometer = {
-	            .axis.x = accelX * ACCEL_TO_G,
-	            .axis.y = accelY * ACCEL_TO_G,
-	            .axis.z = accelZ * ACCEL_TO_G,
-	        };
+            FusionVector gyroscope = {
+                .axis.x = gyroX * GYRO_TO_RADIANS,
+                .axis.y = gyroY * GYRO_TO_RADIANS,
+                .axis.z = gyroZ * GYRO_TO_RADIANS,
+            };
 
-	        // Calculate deltaTime
-	        TickType_t currentTick = xTaskGetTickCount();
-	        float deltaTime = (currentTick - previousTick) / (float)configTICK_RATE_HZ;
-	        previousTick = currentTick;
+            FusionVector accelerometer = {
+                .axis.x = accelX * ACCEL_TO_G,
+                .axis.y = accelY * ACCEL_TO_G,
+                .axis.z = accelZ * ACCEL_TO_G,
+            };
 
-	        // Update Fusion AHRS
-	        FusionAhrsUpdateNoMagnetometer(&ahrs, gyroscope, accelerometer, deltaTime);
+            // Calculate deltaTime
+            TickType_t currentTick = xTaskGetTickCount();
+            float deltaTime = (currentTick - previousTick) / (float)configTICK_RATE_HZ;
+            previousTick = currentTick;
 
-	        // Get and convert orientation to Euler angles
-	        FusionQuaternion quaternion = FusionAhrsGetQuaternion(&ahrs);
-	        FusionEuler euler = FusionQuaternionToEuler(quaternion);
+            //Update Fusion AHRS
+            FusionAhrsUpdateNoMagnetometer(&ahrs, gyroscope, accelerometer, deltaTime);
 
-	        // Print the Roll angle
-	        // xil_printf("Roll: %d degrees\r\n", (int)euler.angle.roll);
+            // Get and convert orientation to Euler angles
+            FusionQuaternion quaternion = FusionAhrsGetQuaternion(&ahrs);
+            FusionEuler euler = FusionQuaternionToEuler(quaternion);
 
-	        systemState.currentAngle = euler.angle.roll;
+            //Print the Roll angle
+            //xil_printf("Roll: %d degrees\r\n", (int)euler.angle.roll);
 
-	        vTaskDelay(pdMS_TO_TICKS(50)); // Maintain task periodicity
-	    }
-	}
+            systemState.currentAngle = euler.angle.roll;
+
+            vTaskDelay(pdMS_TO_TICKS(100)); // Maintain task periodicity
+        }
+    }
 
 // Check slide switch status
 // Suspend vDataTask() and vPIDTask() if switch is triggered
@@ -418,6 +424,18 @@ void updateLEDs(real_t currentAngle, real_t targetAngle) {
     }
 
     NX4IO_setLEDs(leds); // Update the LEDs
+}
+
+void readAngle(char* buffer, int bufferSize) {
+    int count = 0;
+    while (count < bufferSize - 1) { // Leave space for null terminator
+        char c = XUartLite_RecvByte(UART_BASEADDR);
+        if (c == '\r' || c == '\n') { // Assuming '\r' or '\n' indicates end of input
+            break; // Exit loop on receiving end-of-line character
+        }
+        buffer[count++] = c;
+    }
+    buffer[count] = '\0'; // Null-terminate the string
 }
 
 
