@@ -71,6 +71,10 @@ TaskHandle_t xExit = NULL;
 // Global Variables
 
 volatile uint displayMode;
+#define TOTAL_LEDS 16
+#define MID_LED TOTAL_LEDS / 2
+#define MAX_ANGLE 180 // Max target angle
+
 
 typedef struct {
     volatile real_t currentAngle;
@@ -171,6 +175,10 @@ void vPIDTask(void *pvParameters) {
         real_t error = targetAngle - measuredAngle;
         real_t correction = UpdatePID(&pid, error, measuredAngle);
 
+        // Update LED field
+        updateLEDs(systemState.currentAngle, systemState.targetAngle);
+
+
         if((displayMode  == 'r') || (displayMode  == 'R')) {
             xil_printf("Current Angle = %d, Target Angle = %d, Correction suggestion = %d\r\n", (int)measuredAngle, (int)targetAngle, (int)correction);
         }
@@ -179,6 +187,7 @@ void vPIDTask(void *pvParameters) {
             xil_printf("%d %d %d\r\n", (int)measuredAngle, (int)targetAngle, (int)correction);
         }
         
+        systemState.targetAngle = targetAngle;
         
         vTaskDelay(pdMS_TO_TICKS(100)); // Simulate control task workload
     }
@@ -298,7 +307,7 @@ void vExitTask(void *pvParameters) {
 
         uint16_t switches = NX4IO_getSwitches();
         
-        NX4IO_setLEDs(switches); // Reflect switch states on LEDs
+       // NX4IO_setLEDs(switches); // Reflect switch states on LEDs
 
        // xil_printf("DEBUG:vExitTask()\tSwitches: 0x%04X\r\n", switches);
 
@@ -384,3 +393,31 @@ uint8_t bttn_formatter(uint8_t* bttns) {
 
     return formatted_bttns;
 }
+
+void updateLEDs(real_t currentAngle, real_t targetAngle) {
+    uint16_t leds = 0; // Start with all LEDs off
+
+    // Calculate the LED index for the target angle, ensuring it stays within the range
+    int targetLedIndex = (int)((targetAngle / MAX_ANGLE) * (TOTAL_LEDS - 1));
+
+    // Target indication uses two LEDs
+    leds |= (1 << targetLedIndex); // Light up the target LED
+    if (targetLedIndex < TOTAL_LEDS - 1) {
+        leds |= (1 << (targetLedIndex + 1)); // Also light up the next LED 
+    } else {
+        // If target is at the last LED, light up the previous one as well to keep two LEDs lit
+        leds |= (1 << (targetLedIndex - 1));
+    }
+
+    // Calculate the LED index for the current angle
+    int currentLedIndex = (int)((currentAngle / MAX_ANGLE) * (TOTAL_LEDS - 1));
+
+    // Light up the LED for the current angle unless it overlaps with the target LEDs
+    if (currentLedIndex != targetLedIndex && currentLedIndex != targetLedIndex + 1) {
+        leds |= (1 << currentLedIndex);
+    }
+
+    NX4IO_setLEDs(leds); // Update the LEDs
+}
+
+
