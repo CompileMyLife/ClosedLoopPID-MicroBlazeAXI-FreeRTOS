@@ -110,8 +110,6 @@ int main(void) {
 // Adjust t_angle based on BTN0 to inc or BTN3 to dec
 void vPIDTask(void *pvParameters) {
 
-    // Fetch the current angle from the sensor
-    real_t measuredAngle = systemState.currentAngle;
 
     // UNTUNED, JUST GUESSES
     const real_t Kp = 1.0; 
@@ -129,22 +127,27 @@ void vPIDTask(void *pvParameters) {
 
     for (;;) {
 
+    	// Fetch the current angle from the sensor
+    	real_t measuredAngle = systemState.currentAngle;
+    	real_t targetAngle = systemState.targetAngle;
+    	xil_printf("Measured angle at top of PID: %d\r\n", measuredAngle);
+
         uint8_t buttons = NX4IO_getBtns();
         buttons = bttn_formatter(&buttons);
 
         // Adjust target angle based on button presses
         if (buttons & (1 << 0)) { // up pressed
-            systemState.targetAngle += 1.0;
+            targetAngle += 1.0;
         }
         if (buttons & (1 << 3)) { // down pressed
-            systemState.targetAngle -= 1.0;
+            targetAngle -= 1.0;
         }
 
         // Compute PID correction
-        real_t error = systemState.targetAngle - measuredAngle;
+        real_t error = targetAngle - measuredAngle;
         real_t correction = UpdatePID(&pid, error, measuredAngle);
 
-        xil_printf("Current Angle = %d, Target Angle = %d, Correction suggestion = %d\r\n", measuredAngle, systemState.targetAngle, correction);
+        xil_printf("Current Angle = %d, Target Angle = %d, Correction suggestion = %d\r\n", (int)measuredAngle, (int)targetAngle, (int)correction);
         
         vTaskDelay(pdMS_TO_TICKS(500)); // Simulate control task workload
     }
@@ -173,7 +176,7 @@ void vMenuTask(void *pvParameters) {
 
                     xil_printf("User entered %d degrees\r\n", atoi(t_angle_str)); // Print the target angle
 
-                    xil_printf("Target Angle set to: %d degrees\r\n", systemState.targetAngle); // Print the target angle
+                    xil_printf("Target Angle set to: %d degrees\r\n", (int)systemState.targetAngle); // Print the target angle
 
                     vTaskResume(xData);
                     vTaskResume(xPID);
@@ -194,6 +197,7 @@ void vMenuTask(void *pvParameters) {
 // Collect data from MPU6050 sensor
 // Compute angles and store them in a variable
 void vDataTask(void *pvParameters) {
+	int gyroAngleX = 0;
     for (;;) {
 
         
@@ -205,17 +209,17 @@ void vDataTask(void *pvParameters) {
         mpu6050_getGyroData(&i2c_dev, &gyroY, Y_AXIS);
         mpu6050_getGyroData(&i2c_dev, &gyroZ, Z_AXIS);
 
-        xil_printf("Gyroscope: X=%d, Y=%d, Z=%d\r\n", gyroX, gyroY, gyroZ);
+       // xil_printf("Gyroscope: X=%d, Y=%d, Z=%d\r\n", gyroX, gyroY, gyroZ);
 
         short gyroRateX = gyroX / 131.0f;
 
-        int gyroAngleX = 0;
+
 
         if((int)(gyroRateX) != 1) {
             gyroAngleX += (int)(gyroRateX);
         }
 
-        xil_printf("Current Angle: %d\r\n", gyroAngleX);
+        xil_printf("Current Angle Data: %d\r\n", gyroAngleX);
 
         systemState.currentAngle = gyroAngleX;
 
