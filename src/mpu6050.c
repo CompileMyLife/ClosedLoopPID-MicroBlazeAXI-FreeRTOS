@@ -141,3 +141,58 @@ float getGyroScaleFactor() {
             return SCALE_FACTOR_250DPS; // Default case
     }
 }
+
+void calibrateGyro(XIic* i2c, int16_t* offset_x, int16_t* offset_y, int16_t* offset_z) {
+    int32_t sum_x = 0, sum_y = 0, sum_z = 0;
+    const int samples = 1000;
+
+    for (int i = 0; i < samples; ++i) {
+        int16_t x, y, z;
+        mpu6050_getGyroData(i2c, &x, X_AXIS);
+        mpu6050_getGyroData(i2c, &y, Y_AXIS);
+        mpu6050_getGyroData(i2c, &z, Z_AXIS);
+
+        sum_x += x;
+        sum_y += y;
+        sum_z += z;
+        usleep(1000); // Short delay between samples
+    }
+
+    *offset_x = sum_x / samples;
+    *offset_y = sum_y / samples;
+    *offset_z = sum_z / samples;
+}
+
+void mpu6050_getAccelData(XIic* i2c, int16_t *accelX, int16_t *accelY, int16_t *accelZ) {
+    u8 startRegX = ACCEL_XOUT_H;
+    u8 startRegY = ACCEL_YOUT_H;
+    u8 startRegZ = ACCEL_ZOUT_H;
+    u8 recvBufferX[2];
+    u8 recvBufferY[2];
+    u8 recvBufferZ[2];
+
+    // Read the X-axis data
+    if (readRegister(i2c, startRegX, &recvBufferX[0]) != XST_SUCCESS || readRegister(i2c, startRegX + 1, &recvBufferX[1]) != XST_SUCCESS) {
+        xil_printf("Failed to read accel X data\n");
+        return;
+    }
+
+    // Read the Y-axis data
+    if (readRegister(i2c, startRegY, &recvBufferY[0]) != XST_SUCCESS || readRegister(i2c, startRegY + 1, &recvBufferY[1]) != XST_SUCCESS) {
+        xil_printf("Failed to read accel Y data\n");
+        return;
+    }
+
+    // Read the Z-axis data
+    if (readRegister(i2c, startRegZ, &recvBufferZ[0]) != XST_SUCCESS || readRegister(i2c, startRegZ + 1, &recvBufferZ[1]) != XST_SUCCESS) {
+        xil_printf("Failed to read accel Z data\n");
+        return;
+    }
+
+    // Combine the bytes into 16-bit values
+    *accelX = (int16_t)((recvBufferX[0] << 8) | recvBufferX[1]);
+    *accelY = (int16_t)((recvBufferY[0] << 8) | recvBufferY[1]);
+    *accelZ = (int16_t)((recvBufferZ[0] << 8) | recvBufferZ[1]);
+}
+
+
