@@ -28,6 +28,9 @@
 #define GYRO_XOUT_H  0x43
 #define GYRO_YOUT_H  0x45
 #define GYRO_ZOUT_H  0x47
+#define ACCEL_XOUT_H 0x3B
+#define ACCEL_YOUT_H 0x3D
+#define ACCEL_ZOUT_H 0x3F
 #define WHO_AM_I     0x75
 
 // Gyroscope Full-Scale Range (FS_SEL) Configurations
@@ -57,5 +60,7 @@ void mpu6050_gyroCfg(XIic* i2c, uint8_t fs_sel);
 void mpu6050_setSleepMode(XIic* i2c);
 void mpu6050_clearSleepMode(XIic* i2c);
 int InitIic(XIic *IicInstancePtr, u16 DeviceId);
+void calibrateGyro(XIic* i2c, int16_t* offset_x, int16_t* offset_y, int16_t* offset_z);
+void mpu6050_getAccelData(XIic* i2c, int16_t *accelX, int16_t *accelY, int16_t *accelZ);
 
 #endif // MPU6050_H

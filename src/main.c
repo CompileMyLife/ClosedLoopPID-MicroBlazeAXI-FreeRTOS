@@ -19,6 +19,7 @@
 #include "mpu6050.h"
 #include "nexys4IO.h"
 #include "pid_controller.h"
+#include "Fusion.h"
 
 
 
@@ -37,6 +38,10 @@
 
 #define SWITCH_MASK             0xFFFF
 #define BUTTON_MASK             0xFF
+
+#define GYRO_TO_RADIANS 0.00013323124061025415
+#define ACCEL_TO_G (1.0 / 16384.0)
+
 
 // Function prototypes
 void vPIDTask(void *pvParameters);
@@ -68,11 +73,25 @@ TaskHandle_t xExit = NULL;
 typedef struct {
     volatile real_t currentAngle;
     volatile real_t targetAngle;
+    volatile int16_t gyroOffsetX, gyroOffsetY, gyroOffsetZ;
 } SystemState;
 
-SPid pid;
-SystemState systemState;
+typedef struct {
+    int16_t offsetX;
+    int16_t offsetY;
+    int16_t offsetZ;
+    // Other members can be added as needed
+} GyroData;
 
+SPid pid;
+
+GyroData gyroData;
+
+// Fusion stuff
+FusionAhrs ahrs;
+
+// Initialize system state
+SystemState systemState;
 int main(void) {
 
     init_platform();
@@ -81,6 +100,9 @@ int main(void) {
         cleanup_platform();
         return -1;
     }
+
+    FusionAhrsInitialise(&ahrs);
+
     usleep(1000000);
 
     /*if (mpu6050_getID(&i2c_dev, &data) != XST_SUCCESS){
@@ -156,6 +178,8 @@ void vPIDTask(void *pvParameters) {
 // Display user info
 // Wait for 'r' or 'R' input to resume tasks
 void vMenuTask(void *pvParameters) {
+
+	xil_printf("Entered menu\r\n");
     uint8_t c;
     char t_angle_str[4];  // largest num is three characters {'1', '8', '0', '\0'}
     for (;;) {
@@ -197,35 +221,60 @@ void vMenuTask(void *pvParameters) {
 // Collect data from MPU6050 sensor
 // Compute angles and store them in a variable
 void vDataTask(void *pvParameters) {
-	int gyroAngleX = 0;
-    for (;;) {
 
-        
-        // Read data from MPU6050 sensor and print it
-        int16_t gyroX, gyroY, gyroZ;
+	TickType_t previousTick = xTaskGetTickCount();
+	int16_t offsetX = gyroData.offsetX;
+	int16_t offsetY = gyroData.offsetY;
+	int16_t offsetZ = gyroData.offsetZ;
 
-        // Call mpu6050_getGyroData with the IIC instance pointer and addresses of variables
-        mpu6050_getGyroData(&i2c_dev, &gyroX, X_AXIS);
-        mpu6050_getGyroData(&i2c_dev, &gyroY, Y_AXIS);
-        mpu6050_getGyroData(&i2c_dev, &gyroZ, Z_AXIS);
+	for (;;) {
+	        int16_t gyroX, gyroY, gyroZ;
+	        int16_t accelX, accelY, accelZ;
 
-       // xil_printf("Gyroscope: X=%d, Y=%d, Z=%d\r\n", gyroX, gyroY, gyroZ);
+	        // Fetch gyroscope data
+	        mpu6050_getGyroData(&i2c_dev, &gyroX, X_AXIS);
+	        mpu6050_getGyroData(&i2c_dev, &gyroY, Y_AXIS);
+	        mpu6050_getGyroData(&i2c_dev, &gyroZ, Z_AXIS);
 
-        short gyroRateX = gyroX / 131.0f;
+	        // Fetch accelerometer data
+	        // Assuming mpu6050_getAccelData function exists
+	        mpu6050_getAccelData(&i2c_dev, &accelX, &accelY, &accelZ);
 
+	        // Apply offsets and convert to required units
+	        gyroX -= offsetX;
+	        gyroY -= offsetY;
+	        gyroZ -= offsetZ;
 
+	        FusionVector gyroscope = {
+	            .axis.x = gyroX * GYRO_TO_RADIANS,
+	            .axis.y = gyroY * GYRO_TO_RADIANS,
+	            .axis.z = gyroZ * GYRO_TO_RADIANS,
+	        };
 
-        if((int)(gyroRateX) != 1) {
-            gyroAngleX += (int)(gyroRateX);
-        }
+	        FusionVector accelerometer = {
+	            .axis.x = accelX * ACCEL_TO_G,
+	            .axis.y = accelY * ACCEL_TO_G,
+	            .axis.z = accelZ * ACCEL_TO_G,
+	        };
 
-        xil_printf("Current Angle Data: %d\r\n", gyroAngleX);
+	        // Calculate deltaTime
+	        TickType_t currentTick = xTaskGetTickCount();
+	        float deltaTime = (currentTick - previousTick) / (float)configTICK_RATE_HZ;
+	        previousTick = currentTick;
 
-        systemState.currentAngle = gyroAngleX;
+	        // Update Fusion AHRS
+	        FusionAhrsUpdateNoMagnetometer(&ahrs, gyroscope, accelerometer, deltaTime);
 
-        vTaskDelay(pdMS_TO_TICKS(500)); // Delay for half a second
-    }
-}
+	        // Get and convert orientation to Euler angles
+	        FusionQuaternion quaternion = FusionAhrsGetQuaternion(&ahrs);
+	        FusionEuler euler = FusionQuaternionToEuler(quaternion);
+
+	        // Print the Roll angle
+	        xil_printf("Roll: %d degrees\r\n", (int)euler.angle.roll);
+
+	        vTaskDelay(pdMS_TO_TICKS(50)); // Maintain task periodicity
+	    }
+	}
 
 // Check slide switch status
 // Suspend vDataTask() and vPIDTask() if switch is triggered
@@ -272,6 +321,10 @@ int init_sys(void) {
         cleanup_platform(); // Cleanup before exiting
         return -1;
     }
+
+    // Calibrate Gyro
+    calibrateGyro(&i2c_dev, &gyroData.offsetX, &gyroData.offsetY, &gyroData.offsetZ);
+    xil_printf("Gyro calibrated. Offsets: X=%d, Y=%d, Z=%d\n", gyroData.offsetX, gyroData.offsetY, gyroData.offsetZ);
 
     u8 RecvBuffer[1]; 
 
