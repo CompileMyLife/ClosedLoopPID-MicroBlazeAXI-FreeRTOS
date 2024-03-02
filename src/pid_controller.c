@@ -33,7 +33,7 @@ real_t UpdatePID(SPid *pid, real_t error, real_t position) {
     dTerm = pid->derGain * (pid->derState - position);
     pid->derState = position; // Update the derivative state with the current position
 
-    // Calculate the new inputt
-    return pTerm + iTerm + dTerm;
+    // Calculate the new input
+    return position + pTerm + iTerm + dTerm;
 
 }
