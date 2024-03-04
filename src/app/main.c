@@ -109,8 +109,11 @@ void vMenuTask(void *pvParameters);
 /**
  * @brief The task function for collecting and processing data from the MPU6050 sensor.
  * 
- * This task periodically reads data from the gyroscope and accelerometer, processes this data to calculate the current angle,
- * and updates the system state with this new angle.
+ * This task periodically reads data from the gyroscope and accelerometer, 
+ * processes this data to calculate the current angle, and updates the system 
+ * state with this new angle. This task implements Fusion Attitude And Heading 
+ * Reference System package by xioTechnologies to stabilize gyroscope input and 
+ * get a very accurate angle reading.
  * 
  * @param pvParameters Parameters for the task, not used.
  */
@@ -120,15 +123,14 @@ void vDataTask(void *pvParameters);
  * @brief The task function for handling system exit conditions.
  * 
  * This task monitors for a specific condition (a switch being activated) to suspend data collection and 
- * PID control tasks, stopping the system's active operations and returning control to the user. This
- * task implements Fusion Attitude And Heading Reference System package by xioTechnologies to stabilize
- * gyroscope input and get a verry accurate angle reading.
+ * PID control tasks, stopping the system's active operations and returning control to the user.
  * 
  * @param pvParameters Parameters for the task, not used.
  */
 void vExitTask(void *pvParameters);
 
 // HELPER FUNCTIONS
+
 
 /**
  * @brief Initializes the system peripherals and tasks.
@@ -395,8 +397,11 @@ void vMenuTask(void *pvParameters) {
 /**
  * @brief The task function for collecting and processing data from the MPU6050 sensor.
  * 
- * This task periodically reads data from the gyroscope and accelerometer, processes this data to calculate the current angle,
- * and updates the system state with this new angle.
+ * This task periodically reads data from the gyroscope and accelerometer, 
+ * processes this data to calculate the current angle, and updates the system 
+ * state with this new angle. This task implements Fusion Attitude And Heading 
+ * Reference System package by xioTechnologies to stabilize gyroscope input and 
+ * get a very accurate angle reading.
  * 
  * @param pvParameters Parameters for the task, not used.
  */
@@ -460,6 +465,14 @@ void vDataTask(void *pvParameters) {
     }
 }
 
+/**
+ * @brief The task function for handling system exit conditions.
+ * 
+ * This task monitors for a specific condition (a switch being activated) to suspend data collection and 
+ * PID control tasks, stopping the system's active operations and returning control to the user. 
+ * 
+ * @param pvParameters Parameters for the task, not used.
+ */
 void vExitTask(void *pvParameters) {
   print("DEBUG:Entered vExitTask()\r\n");
 
@@ -481,14 +494,13 @@ void vExitTask(void *pvParameters) {
 }  
 
 /**
- * @brief The task function for handling system exit conditions.
+ * @brief Initializes the system peripherals and tasks.
  * 
- * This task monitors for a specific condition (a switch being activated) to suspend data collection and 
- * PID control tasks, stopping the system's active operations and returning control to the user. This
- * task implements Fusion Attitude And Heading Reference System package by xioTechnologies to stabilize
- * gyroscope input and get a verry accurate angle reading.
+ * This function initializes the system's peripherals including the IIC device, UART device, 
+ * and the MPU6050 sensor. It also configures and calibrates the gyroscopes, sets up the interrupt controller, 
+ * and initializes the UART for communication. If any initialization fails, it will clean up and exit the program.
  * 
- * @param pvParameters Parameters for the task, not used.
+ * @return Returns XST_SUCCESS if all initializations are successful, otherwise returns XST_FAILURE.
  */
 int init_sys(void) {
 
