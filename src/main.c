@@ -151,19 +151,6 @@ void updateLEDs(real_t currentAngle, real_t targetAngle);
  */
 void readAngle(char* buffer, int bufferSize);
 
-
-// AXI Peripherals
-XIntc       irq_Ctrlr;
-XIic        i2c_dev;
-XUartLite   uart_dev;
-XIic_Config *ConfigPtr;
-
-// Task Handles
-TaskHandle_t xPID  = NULL;
-TaskHandle_t xData = NULL;
-TaskHandle_t xMenu = NULL;
-TaskHandle_t xExit = NULL;
-
 // Global Variables
 volatile uint displayMode;
 
@@ -181,6 +168,18 @@ typedef struct {
     int16_t offsetZ;
 } GyroData;
 
+// Task Handles
+TaskHandle_t xPID  = NULL;
+TaskHandle_t xData = NULL;
+TaskHandle_t xMenu = NULL;
+TaskHandle_t xExit = NULL;
+
+// AXI Peripherals
+XIntc       irq_Ctrlr;
+XIic        i2c_dev;
+XUartLite   uart_dev;
+XIic_Config *ConfigPtr;
+
 // PID
 SPid pid;
 
@@ -189,10 +188,12 @@ GyroData gyroData;
 // Fusion ahrs
 FusionAhrs ahrs;
 
-// Initialize system state
+// System state
 SystemState systemState;
+
 int main(void) {
 
+    // Initialize platform
     init_platform();
 
     if (init_sys() != XST_SUCCESS) {
@@ -200,29 +201,27 @@ int main(void) {
         return -1;
     }
 
+    // Inittialize Fusion AHRS
     FusionAhrsInitialise(&ahrs);
 
+    // Sleep to let stuff initialize 
     usleep(1000000);
 
-    /*if (mpu6050_getID(&i2c_dev, &data) != XST_SUCCESS){
-        cleanup_platform();
-        return -1;
-    }*/
-
+    // Create tasks
     xTaskCreate(vPIDTask,  "PID  Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1, &xPID);
     xTaskCreate(vMenuTask, "MENU Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1, &xMenu);
     xTaskCreate(vDataTask, "DATA Task", configMINIMAL_STACK_SIZE * 3, NULL, tskIDLE_PRIORITY + 1, &xData);
     xTaskCreate(vExitTask, "EXIT Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1, &xExit);
 
+    // Suspend all but menu
     vTaskSuspend(xData);
     vTaskSuspend(xPID);
     vTaskSuspend(xExit);
-
     vTaskResume(xMenu);
     vTaskStartScheduler();
 
     microblaze_disable_interrupts();
-    cleanup_platform(); // This line is technically unreachable.
+    cleanup_platform(); // This line should be unreachable.
 
     return 0;
 }
@@ -232,12 +231,12 @@ int main(void) {
 void vPIDTask(void *pvParameters) {
 
 
-    // UNTUNED, JUST GUESSES
+    // TUNED!
     const real_t Kp = 2.0; 
     const real_t Ki = 0.01;
     const real_t Kd = 1.0;
 
-    // Initialize PID controller (might move to separate init function)
+    // Initialize PID controller
     pid.propGain = Kp;
     pid.integratGain = Ki;
     pid.derGain = Kd;
@@ -251,8 +250,8 @@ void vPIDTask(void *pvParameters) {
         // Fetch the current angle from the sensor
         real_t measuredAngle = systemState.currentAngle;
         real_t targetAngle = systemState.targetAngle;
-        //xil_printf("Measured angle at top of PID: %d\r\n", measuredAngle);
 
+        // Read buttons
         uint8_t buttons = NX4IO_getBtns();
         buttons = bttn_formatter(&buttons);
 
@@ -271,7 +270,7 @@ void vPIDTask(void *pvParameters) {
         // Update LED field
         updateLEDs(systemState.currentAngle, systemState.targetAngle);
 
-
+        // Display data based on display mode
         if((displayMode  == 'r') || (displayMode  == 'R')) {
             xil_printf("Current Angle = %d, Target Angle = %d, Correction suggestion = %d\r\n", (int)measuredAngle, (int)targetAngle, (int)correction);
         }
@@ -280,6 +279,7 @@ void vPIDTask(void *pvParameters) {
             xil_printf("%d %d %d\r\n", (int)measuredAngle, (int)targetAngle, (int)correction);
         }
         
+        // Update target angle before exiting task
         systemState.targetAngle = targetAngle;
         
         vTaskDelay(pdMS_TO_TICKS(100)); // Simulate control task workload
@@ -292,7 +292,7 @@ void vMenuTask(void *pvParameters) {
 
     xil_printf("Entered menu\r\n");
     uint8_t c;
-    char t_angle_str[5];  // largest num is four characters {'1', '8', '0', \0'}
+    char t_angle_str[5];  // largest num is 5 characters {'1', '8', '0', '\r' \0'}
     for (;;) {
 
         print("INFO:vMenuTask()\tECE 544 Project 2\r\n");
@@ -307,6 +307,8 @@ void vMenuTask(void *pvParameters) {
         displayMode = XUartLite_RecvByte(UART_BASEADDR);
 
         if ((c == 'r') || (c == 'R')) {
+
+            // Prompt for target angle
             print("Set the Target Angle = \r\n");
             
             // Call readAngle to fill t_angle_str with user input
@@ -315,7 +317,7 @@ void vMenuTask(void *pvParameters) {
             // After readAngle, t_angle_str contains the input terminated by '\0'
             systemState.targetAngle = atoi(t_angle_str);    // Convert string to integer
             
-            // Validate and use the target angle as before
+            // Validate and print the target angle
             if ((systemState.targetAngle >= 0) && (systemState.targetAngle <= 180)) {
                 xil_printf("User entered %d degrees\r\n", systemState.targetAngle); // Print the target angle
                 xil_printf("Target Angle set to: %d degrees\r\n", systemState.targetAngle); // Print the target angle
@@ -335,8 +337,10 @@ void vMenuTask(void *pvParameters) {
 // Compute angles and store them in a variable
 void vDataTask(void *pvParameters) {
 
-
+    // Set up variable to keep track of cycles for Fusion
     TickType_t previousTick = xTaskGetTickCount();
+
+    // get gyro offsets from calibration
     int16_t offsetX = gyroData.offsetX;
     int16_t offsetY = gyroData.offsetY;
     int16_t offsetZ = gyroData.offsetZ;
@@ -351,7 +355,6 @@ void vDataTask(void *pvParameters) {
             mpu6050_getGyroData(&i2c_dev, &gyroZ, Z_AXIS);
 
             // Fetch accelerometer data
-            // Assuming mpu6050_getAccelData function exists
             mpu6050_getAccelData(&i2c_dev, &accelX, &accelY, &accelZ);
 
             // Apply offsets and convert to required units
