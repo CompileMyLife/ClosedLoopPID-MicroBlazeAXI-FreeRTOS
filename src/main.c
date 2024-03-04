@@ -24,7 +24,7 @@
 
 
 
-
+// Device IDs
 #define INTC_DEVICE_ID          XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID
 #define IIC_DEVICE_ID           XPAR_IIC_0_DEVICE_ID
 #define UART_DEVICE_ID          XPAR_AXI_UARTLITE_0_DEVICE_ID
@@ -35,29 +35,122 @@
 #define N4IO_BASEADDR           XPAR_NEXYS4IO_0_S00_AXI_BASEADDR
 #define N4IO_HIGHADDR           XPAR_NEXYS4IO_0_S00_AXI_HIGHADDR
 
+// AXI INTERRUPTS
 #define AXI_TIMER_INTR_NUM      XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_INTR
 #define AXI_UARTLITE_INTR_NUM   XPAR_MICROBLAZE_0_AXI_INTC_AXI_UARTLITE_0_INTERRUPT_INTR
 
+// BTN/SW MASKS
 #define SWITCH_MASK             0xFFFF
 #define BUTTON_MASK             0xFF
 
+// FUSION DEFINITONS
 #define GYRO_TO_RADIANS 0.00013323124061025415
 #define ACCEL_TO_G (1.0 / 16384.0)
 
+// LED definitions for "level"
+#define TOTAL_LEDS 16
+#define MID_LED TOTAL_LEDS / 2
+#define MAX_ANGLE 180 // Max target angle
 
 
-// Function prototypes
+// TASKS
+
+/**
+ * @brief The task function for the PID control loop.
+ * 
+ * This task periodically calculates the required correction to minimize the error between the target angle and 
+ * the current angle. The task also handles user input to adjust the target angle, BTNU increases the angle
+ * while BTND decreases it.
+ * 
+ * @param pvParameters Parameters for the task, not used.
+ */
 void vPIDTask(void *pvParameters);
 
+/**
+ * @brief The task function for displaying the user menu and handling user input.
+ * 
+ * This task provides a user interface through UART. It allows the user to activate different modes of operation and 
+ * set the target angle for the system. It also resumes other tasks based on user input.
+ * Use r/R for run mode at the first selection, then select either r/R for read mode or d/D for data mode.
+ * Read mode prints information about the data given, while data mode just prints the raw data, making it easy
+ * to put into a spreadsheet.
+ * 
+ * @param pvParameters Parameters for the task, not used.
+ */
 void vMenuTask(void *pvParameters);
 
+/**
+ * @brief The task function for collecting and processing data from the MPU6050 sensor.
+ * 
+ * This task periodically reads data from the gyroscope and accelerometer, processes this data to calculate the current angle,
+ * and updates the system state with this new angle.
+ * 
+ * @param pvParameters Parameters for the task, not used.
+ */
 void vDataTask(void *pvParameters);
 
+/**
+ * @brief The task function for handling system exit conditions.
+ * 
+ * This task monitors for a specific condition (a switch being activated) to suspend data collection and 
+ * PID control tasks, stopping the system's active operations and returning control to the user. This
+ * task implements Fusion Attitude And Heading Reference System package by xioTechnologies to stabilize
+ * gyroscope input and get a verry accurate angle reading.
+ * 
+ * @param pvParameters Parameters for the task, not used.
+ */
 void vExitTask(void *pvParameters);
 
+// HELPER FUNCTIONS
+
+/**
+ * @brief Initializes the system peripherals and tasks.
+ * 
+ * This function initializes the system's peripherals including the IIC device, UART device, 
+ * and the MPU6050 sensor. It also configures and calibrates the gyroscopes, sets up the interrupt controller, 
+ * and initializes the UART for communication. If any initialization fails, it will clean up and exit the program.
+ * 
+ * @return Returns XST_SUCCESS if all initializations are successful, otherwise returns XST_FAILURE.
+ */
 int init_sys(void);
 
+
+/**
+ * @brief Formats button input to a more usable form.
+ * 
+ * This function takes the raw button input values and rearranges them into a format where each bit represents 
+ * a button state in a more readable order. This formatted value is easier to use for button state checks in the program.
+ * 
+ * @param bttns Pointer to the raw button input value.
+ * @return Returns a uint8_t value where each bit represents the state of a button.
+ */
 uint8_t bttn_formatter(uint8_t* bttns);
+
+/**
+ * @brief Updates the LED display based on the current and target angles, "bubble level"
+ * 
+ * This function calculates which LEDs should be lit based on the current and target angles and updates the 
+ * Nexys4IO board's LEDs accordingly. It ensures that LEDs represent these angles visually for the user.
+ * Two lit LEDs are used to represent the target angle, while a single LED represents the current angle.
+ * The current angle is determined as a function of the distanace from the target, which allows for finer
+ * detail when close to the target angle.
+ * 
+ * @param currentAngle The current angle of the system.
+ * @param targetAngle The target angle for the system to achieve.
+ */
+void updateLEDs(real_t currentAngle, real_t targetAngle);
+
+/**
+ * @brief Reads an angle value from the UART input.
+ * 
+ * This function captures numeric input from the UART terminal until an end-of-line character is detected. 
+ * It stores this input in a buffer as a string which can then be converted to a numeric value representing an angle.
+ * 
+ * @param buffer The buffer where the input string is stored.
+ * @param bufferSize The size of the buffer.
+ */
+void readAngle(char* buffer, int bufferSize);
+
 
 // AXI Peripherals
 XIntc       irq_Ctrlr;
@@ -72,35 +165,29 @@ TaskHandle_t xMenu = NULL;
 TaskHandle_t xExit = NULL;
 
 // Global Variables
-
 volatile uint displayMode;
-#define TOTAL_LEDS 16
-#define MID_LED TOTAL_LEDS / 2
-#define MAX_ANGLE 180 // Max target angle
 
-
+// data struct
 typedef struct {
     volatile real_t currentAngle;
     volatile real_t targetAngle;
     volatile int16_t gyroOffsetX, gyroOffsetY, gyroOffsetZ;
 } SystemState;
 
+// Calibration struct
 typedef struct {
     int16_t offsetX;
     int16_t offsetY;
     int16_t offsetZ;
-    // Other members can be added as needed
 } GyroData;
 
+// PID
 SPid pid;
 
 GyroData gyroData;
 
-// Fusion stuff
+// Fusion ahrs
 FusionAhrs ahrs;
-
-void updateLEDs(real_t currentAngle, real_t targetAngle);
-void readAngle(char* buffer, int bufferSize);
 
 // Initialize system state
 SystemState systemState;
@@ -439,3 +526,24 @@ void readAngle(char* buffer, int bufferSize) {
 }
 
 
+// Fusion AHRS LICENSE
+/*
+ The MIT License (MIT)
+
+Copyright (c) 2021 x-io Technologies
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation 
+the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and 
+to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions 
+of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+IN THE SOFTWARE.
+
+ */
