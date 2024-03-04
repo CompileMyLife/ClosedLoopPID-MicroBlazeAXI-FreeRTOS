@@ -52,15 +52,91 @@
 #define Z_AXIS 2
 
 // Function Prototypes
-int readRegister(XIic *IicInstancePtr, u8 Register, u8 *value);
-int writeRegister(XIic *IicInstancePtr, u8 Register, u8 value);
+/**
+ * Initializes the MPU6050 device.
+ * 
+ * @param i2c Pointer to the XIic instance for communication.
+ * @return XST_SUCCESS if the device was successfully initialized, otherwise XST_FAILURE.
+ */
 int mpu6050_init(XIic* i2c);
+/**
+ * Retrieves gyroscope data for a specified axis.
+ * 
+ * @param i2c Pointer to the XIic instance for communication.
+ * @param angle_actual Pointer to store the read gyroscope data.
+ * @param axis The axis (X_AXIS, Y_AXIS, Z_AXIS) to read the data from.
+ */
 void mpu6050_getGyroData(XIic* i2c, int16_t *angle_actual, int axis);
+/**
+ * Configures the gyroscope full-scale range.
+ * 
+ * @param i2c Pointer to the XIic instance for communication.
+ * @param fs_sel The full-scale range setting.
+ */
 void mpu6050_gyroCfg(XIic* i2c, uint8_t fs_sel);
+/**
+ * Sets the MPU6050 into sleep mode.
+ * 
+ * @param i2c Pointer to the XIic instance for communication.
+ */
 void mpu6050_setSleepMode(XIic* i2c);
+/**
+ * Wakes the MPU6050 from sleep mode.
+ * 
+ * @param i2c Pointer to the XIic instance for communication.
+ */
 void mpu6050_clearSleepMode(XIic* i2c);
+/**
+ * Initializes the IIC driver for communication with the MPU6050.
+ * 
+ * @param IicInstancePtr Pointer to the XIic instance.
+ * @param DeviceId The device ID of the IIC.
+ * @return XST_SUCCESS if initialization was successful, otherwise XST_FAILURE.
+ */
 int InitIic(XIic *IicInstancePtr, u16 DeviceId);
+/**
+ * Calibrates the gyroscope to determine offsets for each axis.
+ * 
+ * @param i2c Pointer to the XIic instance for communication.
+ * @param offset_x Pointer to store the calculated offset for the X axis.
+ * @param offset_y Pointer to store the calculated offset for the Y axis.
+ * @param offset_z Pointer to store the calculated offset for the Z axis.
+ */
 void calibrateGyro(XIic* i2c, int16_t* offset_x, int16_t* offset_y, int16_t* offset_z);
+/**
+ * Retrieves accelerometer data for the X, Y, and Z axes.
+ * 
+ * @param i2c Pointer to the XIic instance for communication.
+ * @param accelX Pointer to store the accelerometer data for the X axis.
+ * @param accelY Pointer to store the accelerometer data for the Y axis.
+ * @param accelZ Pointer to store the accelerometer data for the Z axis.
+ */
 void mpu6050_getAccelData(XIic* i2c, int16_t *accelX, int16_t *accelY, int16_t *accelZ);
+/**
+ * Reads a byte from a specified register of the MPU6050.
+ *
+ * This function initiates a read operation to the specified register of the MPU6050 device over I2C,
+ * storing the result in the provided variable. It handles the communication process, including sending
+ * the register address and reading the response.
+ *
+ * @param IicInstancePtr Pointer to the initialized XIic instance for I2C communication.
+ * @param Register The address of the register from which to read.
+ * @param value Pointer to a variable where the read byte will be stored.
+ * @return Returns XST_SUCCESS if the read operation is successful, otherwise returns XST_FAILURE.
+ */
+int readRegister(XIic *IicInstancePtr, u8 Register, u8 *value);
+/**
+ * Writes a byte to a specified register of the MPU6050.
+ *
+ * This function initiates a write operation to the specified register of the MPU6050 device over I2C.
+ * It packages the register address and the byte to be written into a buffer and sends it to the device,
+ * handling the necessary I2C communication process.
+ *
+ * @param IicInstancePtr Pointer to the initialized XIic instance for I2C communication.
+ * @param Register The address of the register to which to write.
+ * @param value The byte value to write to the register.
+ * @return Returns XST_SUCCESS if the write operation is successful, otherwise returns XST_FAILURE.
+ */
+int writeRegister(XIic *IicInstancePtr, u8 Register, u8 value);
 
 #endif // MPU6050_H
