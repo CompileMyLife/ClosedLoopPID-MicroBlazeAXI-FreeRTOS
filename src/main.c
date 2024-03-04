@@ -1,3 +1,30 @@
+/**
+ * @file main.c
+ * @brief Main program for a real-time PID-controlled system using the MPU6050 sensor.
+ *
+ * This program implements a real-time system for angle stabilization based on input from the MPU6050 sensor,
+ * utilizing a PID control scheme. It runs on a MicroBlaze processor with a FreeRTOS operating system, managing tasks
+ * for data collection, user input, PID control, and system exit handling. The system uses UART for user interaction,
+ * allowing runtime adjustments to the target angle and control parameters. It also features an LED "bubble level" display
+ * for visual feedback on the target and current angles. Key components include the Xilinx Interrupt Controller for
+ * managing hardware interrupts, the XIic driver for I2C communication with the MPU6050, and the XUartLite driver for UART
+ * communication. The program also utilizes the Fusion Digital Motion Processing library for improved sensor data fusion
+ * and stability.
+ *
+ * Functionalities include:
+ * - Real-time data collection from the MPU6050 gyroscope and accelerometer.
+ * - PID control for angle stabilization.
+ * - User interface via UART for runtime control and system status display.
+ * - Visual feedback through LEDs on the Nexys4IO board.
+ * - System exit handling through a switch-based interface.
+ *
+ * This file contains the main entry point, task definitions, initialization routines, and utility functions
+ * for system operation.
+ *
+ * @author Ibrahim Binmahfood & Robert Wilcox; integration of Fusion library by x-io Technologies.
+ * @date 2024-02-26
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -132,8 +159,6 @@ uint8_t bttn_formatter(uint8_t* bttns);
  * This function calculates which LEDs should be lit based on the current and target angles and updates the 
  * Nexys4IO board's LEDs accordingly. It ensures that LEDs represent these angles visually for the user.
  * Two lit LEDs are used to represent the target angle, while a single LED represents the current angle.
- * The current angle is determined as a function of the distanace from the target, which allows for finer
- * detail when close to the target angle.
  * 
  * @param currentAngle The current angle of the system.
  * @param targetAngle The target angle for the system to achieve.
@@ -357,41 +382,41 @@ void vDataTask(void *pvParameters) {
             // Fetch accelerometer data
             mpu6050_getAccelData(&i2c_dev, &accelX, &accelY, &accelZ);
 
-            // Apply offsets and convert to required units
+            // Apply offsets
             gyroX -= offsetX;
             gyroY -= offsetY;
             gyroZ -= offsetZ;
 
+            // Create fusion vector struct with gryo data
             FusionVector gyroscope = {
                 .axis.x = gyroX * GYRO_TO_RADIANS,
                 .axis.y = gyroY * GYRO_TO_RADIANS,
                 .axis.z = gyroZ * GYRO_TO_RADIANS,
             };
 
+            // Create fusion vector struct with accel data
             FusionVector accelerometer = {
                 .axis.x = accelX * ACCEL_TO_G,
                 .axis.y = accelY * ACCEL_TO_G,
                 .axis.z = accelZ * ACCEL_TO_G,
             };
 
-            // Calculate deltaTime
+            // Calculate deltaTime based on ticks
             TickType_t currentTick = xTaskGetTickCount();
             float deltaTime = (currentTick - previousTick) / (float)configTICK_RATE_HZ;
             previousTick = currentTick;
 
-            //Update Fusion AHRS
+            // Update Fusion AHRS
             FusionAhrsUpdateNoMagnetometer(&ahrs, gyroscope, accelerometer, deltaTime);
 
             // Get and convert orientation to Euler angles
             FusionQuaternion quaternion = FusionAhrsGetQuaternion(&ahrs);
             FusionEuler euler = FusionQuaternionToEuler(quaternion);
 
-            //Print the Roll angle
-            //xil_printf("Roll: %d degrees\r\n", (int)euler.angle.roll);
-
+            // Update the current angle from the euler struct
             systemState.currentAngle = euler.angle.roll;
 
-            vTaskDelay(pdMS_TO_TICKS(100)); // Maintain task periodicity
+            vTaskDelay(pdMS_TO_TICKS(100)); // Task wait
         }
     }
 
@@ -399,14 +424,11 @@ void vDataTask(void *pvParameters) {
 // Suspend vDataTask() and vPIDTask() if switch is triggered
 void vExitTask(void *pvParameters) {
     for (;;) {
-       // print("EXIT\r\n");
 
+        // Get switches
         uint16_t switches = NX4IO_getSwitches();
         
-       // NX4IO_setLEDs(switches); // Reflect switch states on LEDs
-
-       // xil_printf("DEBUG:vExitTask()\tSwitches: 0x%04X\r\n", switches);
-
+        // Suspend task if any switches are presses
         if (switches & SWITCH_MASK) {
             vTaskSuspend(xData);
             vTaskSuspend(xPID);
@@ -414,12 +436,16 @@ void vExitTask(void *pvParameters) {
             vTaskSuspend(xExit);
         }
          
-        vTaskDelay(pdMS_TO_TICKS(500)); // Simulate control task workload
+        vTaskDelay(pdMS_TO_TICKS(500)); // Task wait
     }
 }
 
+// Initialize system
 int init_sys(void) {
+
     int status;
+
+    // Iniitialize NX4IO
     status = NX4IO_initialize(N4IO_BASEADDR);
     if (status != XST_SUCCESS) {
         return XST_FAILURE;
@@ -441,7 +467,7 @@ int init_sys(void) {
         return -1;
     }
 
-    // Calibrate Gyro
+    // Calibrate MPU6050
     calibrateGyro(&i2c_dev, &gyroData.offsetX, &gyroData.offsetY, &gyroData.offsetZ);
     xil_printf("Gyro calibrated. Offsets: X=%d, Y=%d, Z=%d\r\n", gyroData.offsetX, gyroData.offsetY, gyroData.offsetZ);
 
@@ -454,8 +480,10 @@ int init_sys(void) {
         xil_printf("Received WHO_AM_I: 0x%X\r\n", RecvBuffer[0]);
     }
 
+    // Configure MPU6050
     mpu6050_gyroCfg(&i2c_dev, GYRO_FS_SEL_500DPS);
 
+    // Initialize interrupts
     status = XIntc_Initialize(&irq_Ctrlr, INTC_DEVICE_ID);
     if (status != XST_SUCCESS) {
         return XST_FAILURE;
@@ -477,6 +505,7 @@ int init_sys(void) {
     return XST_SUCCESS;
 }
 
+// Reformats buttons to more readble formatt
 uint8_t bttn_formatter(uint8_t* bttns) {
     uint8_t bttn_d, bttn_l, bttn_r, bttn_u;
     uint8_t formatted_bttns;
@@ -490,10 +519,13 @@ uint8_t bttn_formatter(uint8_t* bttns) {
     return formatted_bttns;
 }
 
+// Bubble LED function
 void updateLEDs(real_t currentAngle, real_t targetAngle) {
     uint16_t leds = 0; // Start with all LEDs off
 
     // Calculate the LED index for the target angle, ensuring it stays within the range
+    // 180 is max range for target angle, as any more would be redundant, and hard to represent
+    // with just 16 LEDs
     int targetLedIndex = (int)((targetAngle / MAX_ANGLE) * (TOTAL_LEDS - 1));
 
     // Target indication uses two LEDs
@@ -505,10 +537,13 @@ void updateLEDs(real_t currentAngle, real_t targetAngle) {
         leds |= (1 << (targetLedIndex - 1));
     }
 
-    // Calculate the LED index for the current angle
+    // Calculate the LED index for the current angle, ensuring it is within range.
+    // Also limited to 180
     int currentLedIndex = (int)((currentAngle / MAX_ANGLE) * (TOTAL_LEDS - 1));
 
-    // Light up the LED for the current angle unless it overlaps with the target LEDs
+    // Light up the LED for the current angle unless it overlaps with the target LEDs,
+    // in which case we don't need to worry about it, because that section will
+    // already be lit.
     if (currentLedIndex != targetLedIndex && currentLedIndex != targetLedIndex + 1) {
         leds |= (1 << currentLedIndex);
     }
@@ -516,12 +551,20 @@ void updateLEDs(real_t currentAngle, real_t targetAngle) {
     NX4IO_setLEDs(leds); // Update the LEDs
 }
 
+// Read the angle input from the user
 void readAngle(char* buffer, int bufferSize) {
+
+    // Count for input
     int count = 0;
+
     while (count < bufferSize - 1) { // Leave space for null terminator
+
+        // Get a byte from uart
         char c = XUartLite_RecvByte(UART_BASEADDR);
-        if (c == '\r' || c == '\n') { // Assuming '\r' or '\n' indicates end of input
-            break; // Exit loop on receiving end-of-line character
+
+        // '\r' or '\n' indicates end of input
+        if (c == '\r' || c == '\n') {
+            break; 
         }
         buffer[count++] = c;
     }
