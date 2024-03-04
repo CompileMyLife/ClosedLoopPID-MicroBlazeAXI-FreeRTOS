@@ -15,6 +15,7 @@
 #include "xiic.h"
 #include "xparameters.h"
 #include "xil_printf.h"
+#include "microblaze_sleep.h"
 #include "mpu6050.h"
 
 // Definitions
