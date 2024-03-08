@@ -36,7 +36,7 @@ real_t UpdatePID(SPid *pid, real_t error, real_t position) {
     pTerm = pid->propGain * error;
 
     // Update the integral state with the error
-    pid->integratState += error;
+    pid->integratState += error * 0.2f;
 
     // Limit the integrator state to prevent integral windup
     if (pid->integratState > pid->integratMax) {
@@ -49,9 +49,10 @@ real_t UpdatePID(SPid *pid, real_t error, real_t position) {
     iTerm = pid->integratGain * pid->integratState;
 
     // Calculate the derivative term
-    dTerm = pid->derGain * (pid->derState - position);
-    pid->derState = position; // Update the derivative state with the current position
+    dTerm = pid->derGain * (error - pid->derState) / 0.2f;
+    pid->derState = error; // Update the derivative state with the current position
 
+    xil_printf("pTerm: %d, iTerm: %d, dTerm: %d\r\n", (int)pTerm, (int)iTerm, (int)dTerm);
     // Calculate the new input
     return position + pTerm + iTerm + dTerm;
 

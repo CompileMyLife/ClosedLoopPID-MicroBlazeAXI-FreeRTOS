@@ -271,15 +271,15 @@ int main(void) {
 void vPIDTask(void *pvParameters) {
 
     const real_t Kp = 2.0; 
-    const real_t Ki = 0.01;
+    const real_t Ki = 0.1;
     const real_t Kd = 1.0;
 
     // Initialize PID controller
     pid.propGain = Kp;
     pid.integratGain = Ki;
     pid.derGain = Kd;
-    pid.integratMax = 100;
-    pid.integratMin = -100;
+    pid.integratMax = 255;
+    pid.integratMin = -255;
     pid.integratState = 0;
     pid.derState = 0;
 
@@ -325,6 +325,7 @@ void vPIDTask(void *pvParameters) {
         // Update target angle before exiting task
         systemState.targetAngle = targetAngle;
         
+
         vTaskDelay(pdMS_TO_TICKS(100)); // Simulate control task workload
     }
 }
@@ -353,15 +354,17 @@ void vMenuTask(void *pvParameters) {
         print("INFO:vMenuTask()\tand Robert Wilcox     (rwilcox@pdx.edu)\r\n");
 
         // Ask user if to activate run mode
-        print("Do wish to activate RUN Mode? Type 'r' or 'R':\r\n");
+        print("Do wish to activate RUN Mode or SLEEP mode? Type 'r' or 'R' for run or 's' or 'S' for sleep:\r\n");
         c = XUartLite_RecvByte(UART_BASEADDR);  // retrieve byte character from user
 
-        // Ask user if to activate read mode or gather data mode 
-        print("Do you wish to use read mode or data gather mode? Choose 'R/r' or 'D/d':\r\n");
-        displayMode = XUartLite_RecvByte(UART_BASEADDR);    // retrieve byte character from user
+
 
         // Check if user activated run mode
         if ((c == 'r') || (c == 'R')) {
+
+        	 // Ask user if to activate read mode or gather data mode
+        	 print("Do you wish to use read mode or data gather mode? Choose 'R/r' or 'D/d':\r\n");
+        	 displayMode = XUartLite_RecvByte(UART_BASEADDR);    // retrieve byte character from user
             // Ask user for target angle
             print("Set the Target Angle = \r\n");
             
@@ -390,6 +393,15 @@ void vMenuTask(void *pvParameters) {
             else {
                 print("ERROR:vMenuTask()\tInvalid Target Angle. Please enter a value between 0 and 180.\r\n");
             }
+        }
+
+        if((c == 's') || (c == 'S')) {
+        	mpu6050_setSleepMode(&i2c_dev);
+        	print("Device in sleep mode\r\n");
+        	while(!NX4IO_getSwitches()){
+
+        	}
+        	mpu6050_clearSleepMode(&i2c_dev);
         }
     }
 }
